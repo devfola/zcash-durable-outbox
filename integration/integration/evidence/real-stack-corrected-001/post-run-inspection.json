@@ -1,0 +1,176 @@
+{
+  "read_only": true,
+  "automatic_resume": false,
+  "databases": {
+    "primary.db": {
+      "wallet_owner": "terminal-extraction-response-loss",
+      "payments": [
+        {
+          "id": "blocked-by-quarantine",
+          "stage": "pending",
+          "inflight": null,
+          "owner": null,
+          "byte_digest": null,
+          "txid": null,
+          "last_error": null
+        },
+        {
+          "id": "bound-create-origin-A",
+          "stage": "accepted",
+          "inflight": null,
+          "owner": "c5894314-25fa-4865-8f56-01754500d3fa",
+          "byte_digest": "c5c005419c3ce23b0e31d9d93e186d6879e1993018abdb8607629ac7d20c1784",
+          "txid": "e29c695f9b7f8e9d9f32ec7c819046a0625e38ee0d4e977f0391b94958d60202",
+          "last_error": null
+        },
+        {
+          "id": "bound-create-origin-B",
+          "stage": "accepted",
+          "inflight": null,
+          "owner": "a4014586-c429-4e7d-9a27-cdf3c57f21ed",
+          "byte_digest": "2c00d88adcdd473b2eeb3765c4d2bd4125fa905e588ad2cb5373e751587decb2",
+          "txid": "33b9affc7b4bc9d15f03ff6214c66494b4e90f69ff32c8024b50ae132f1202dd",
+          "last_error": null
+        },
+        {
+          "id": "bounty:real-stack-award",
+          "stage": "accepted",
+          "inflight": null,
+          "owner": "bfd6e10e-70b9-4dbe-b83c-8c7e85eb8a44",
+          "byte_digest": "1c1b9b56efd99fe1dcbe4deea64ab286b58343833699109fbd388ce8ac1297c4",
+          "txid": "c67a15409904539f459939ad382290407e4ebaceef6179144a761dc11444f3cd",
+          "last_error": null
+        },
+        {
+          "id": "node-acceptance-response-lost",
+          "stage": "accepted",
+          "inflight": null,
+          "owner": "02351726-e19b-42b5-bea1-5e1e4ae503de",
+          "byte_digest": "12d3d1d2a04c38e180bf1a2a786b13c41e207077ffb882b3507b68e743d9f6a2",
+          "txid": "998bb903614963cd67645fb22ee334ed887ba0eea86cf8723e01fdbff3d2f056",
+          "last_error": null
+        },
+        {
+          "id": "ordinary-001",
+          "stage": "accepted",
+          "inflight": null,
+          "owner": "24b463a2-737d-4c86-bb60-0515ab30953b",
+          "byte_digest": "0d8d7f25de71a7a6893c1f2a469272cce1958fff437ead1316d0de82d5deee64",
+          "txid": "87cff843b572e18fb6e3627477f387c0fdce6683b21729b01a8f7549f343c65c",
+          "last_error": null
+        },
+        {
+          "id": "refund:real-stack-purchase",
+          "stage": "accepted",
+          "inflight": null,
+          "owner": "d1d2f862-587e-4406-8f1a-4134d8fb00f4",
+          "byte_digest": "d8434c1ad9a1f30fcd7765a071583a4759c6c3f1a6f1c869921d93ba43ca973c",
+          "txid": "864c2c493b286310aca4055ad3a0f5c333b8bc61312013fbe13445130e89a128",
+          "last_error": null
+        },
+        {
+          "id": "same-id-concurrent",
+          "stage": "accepted",
+          "inflight": null,
+          "owner": "d64f9898-b10a-412b-9372-25e5fea322ac",
+          "byte_digest": "d821921b07820f6e75ef46670387ebb9ad79691cbbe5bca8b73d1cfb1b6e2281",
+          "txid": "d84a43d4cfb463efac4406875cf726d547b34b01b17d2650aca282c30fe7d9d4",
+          "last_error": null
+        },
+        {
+          "id": "terminal-extraction-response-loss",
+          "stage": "signed",
+          "inflight": "extract",
+          "owner": "baa482dc-4f2f-46f2-a5e1-21d1d1665698",
+          "byte_digest": null,
+          "txid": null,
+          "last_error": null
+        }
+      ]
+    },
+    "secondary-commit-failure.db": {
+      "wallet_owner": "terminal-sqlite-commit-rejection",
+      "payments": [
+        {
+          "id": "terminal-sqlite-commit-rejection",
+          "stage": "signed",
+          "inflight": "extract",
+          "owner": "14fc0097-11da-4a1d-8af4-11b2b8b0eafb",
+          "byte_digest": null,
+          "txid": null,
+          "last_error": "FOREIGN KEY constraint failed"
+        }
+      ]
+    },
+    "integrity-copy.db": {
+      "wallet_owner": null,
+      "payments": [
+        {
+          "id": "bound-create-origin-A",
+          "stage": "accepted",
+          "inflight": null,
+          "owner": "c5894314-25fa-4865-8f56-01754500d3fa",
+          "byte_digest": "c5c005419c3ce23b0e31d9d93e186d6879e1993018abdb8607629ac7d20c1784",
+          "txid": "e29c695f9b7f8e9d9f32ec7c819046a0625e38ee0d4e977f0391b94958d60202",
+          "last_error": null
+        },
+        {
+          "id": "bound-create-origin-B",
+          "stage": "accepted",
+          "inflight": null,
+          "owner": "a4014586-c429-4e7d-9a27-cdf3c57f21ed",
+          "byte_digest": "2c00d88adcdd473b2eeb3765c4d2bd4125fa905e588ad2cb5373e751587decb2",
+          "txid": "33b9affc7b4bc9d15f03ff6214c66494b4e90f69ff32c8024b50ae132f1202dd",
+          "last_error": null
+        },
+        {
+          "id": "bounty:real-stack-award",
+          "stage": "accepted",
+          "inflight": null,
+          "owner": "bfd6e10e-70b9-4dbe-b83c-8c7e85eb8a44",
+          "byte_digest": "1c1b9b56efd99fe1dcbe4deea64ab286b58343833699109fbd388ce8ac1297c4",
+          "txid": "c67a15409904539f459939ad382290407e4ebaceef6179144a761dc11444f3cd",
+          "last_error": null
+        },
+        {
+          "id": "node-acceptance-response-lost",
+          "stage": "accepted",
+          "inflight": null,
+          "owner": "02351726-e19b-42b5-bea1-5e1e4ae503de",
+          "byte_digest": "12d3d1d2a04c38e180bf1a2a786b13c41e207077ffb882b3507b68e743d9f6a2",
+          "txid": "998bb903614963cd67645fb22ee334ed887ba0eea86cf8723e01fdbff3d2f056",
+          "last_error": null
+        },
+        {
+          "id": "ordinary-001",
+          "stage": "accepted",
+          "inflight": null,
+          "owner": "24b463a2-737d-4c86-bb60-0515ab30953b",
+          "byte_digest": "0d8d7f25de71a7a6893c1f2a469272cce1958fff437ead1316d0de82d5deee64",
+          "txid": "87cff843b572e18fb6e3627477f387c0fdce6683b21729b01a8f7549f343c65c",
+          "last_error": null
+        },
+        {
+          "id": "refund:real-stack-purchase",
+          "stage": "accepted",
+          "inflight": null,
+          "owner": "d1d2f862-587e-4406-8f1a-4134d8fb00f4",
+          "byte_digest": "d8434c1ad9a1f30fcd7765a071583a4759c6c3f1a6f1c869921d93ba43ca973c",
+          "txid": "864c2c493b286310aca4055ad3a0f5c333b8bc61312013fbe13445130e89a128",
+          "last_error": null
+        },
+        {
+          "id": "same-id-concurrent",
+          "stage": "accepted",
+          "inflight": null,
+          "owner": "d64f9898-b10a-412b-9372-25e5fea322ac",
+          "byte_digest": "d821921b07820f6e75ef46670387ebb9ad79691cbbe5bca8b73d1cfb1b6e2281",
+          "txid": "d84a43d4cfb463efac4406875cf726d547b34b01b17d2650aca282c30fe7d9d4",
+          "last_error": null
+        }
+      ]
+    }
+  },
+  "node_height": 113,
+  "mempool_txids": []
+}

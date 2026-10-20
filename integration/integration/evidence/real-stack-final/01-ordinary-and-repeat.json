@@ -1,0 +1,28 @@
+{
+  "chain_observation": {
+    "blockhash": "bf74b67d85c02ef0b9707e4aa458239e6067c2ff7c8c33bd8411b9774a603a2d",
+    "confirmations": 1,
+    "last_known_mined_block": "bf74b67d85c02ef0b9707e4aa458239e6067c2ff7c8c33bd8411b9774a603a2d",
+    "mining_reversed": false,
+    "prior_mining_no_longer_observed": false,
+    "required_confirmations": 1,
+    "state": "confirmed",
+    "tip_height": 108,
+    "txid": "fc01dbeee8722c59948045c66b6dce2ec0e4dc2aff53b4ce8a88535b689e2560"
+  },
+  "memo_sha256": "07c65536892061bc609c9ea3bb65ff80b05f6e8fc56211bd6c25b7475c29d523",
+  "passed": true,
+  "raw_sha256": "144e3ebb9f26187431ebc054019c7916f40c7bef38e762bcd7b7ecbf0946e96d",
+  "real_wallet_and_node": true,
+  "receiver_confirmations": 1,
+  "receiver_status": "mined",
+  "receiver_verified": true,
+  "scenario": "01-ordinary-and-repeat",
+  "txid": "fc01dbeee8722c59948045c66b6dce2ec0e4dc2aff53b4ce8a88535b689e2560",
+  "wallet_construction_calls": {
+    "pczt_create": 1,
+    "pczt_extract": 1,
+    "pczt_prove": 1,
+    "pczt_sign": 1
+  }
+}

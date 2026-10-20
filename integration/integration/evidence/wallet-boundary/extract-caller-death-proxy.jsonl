@@ -1,0 +1,5 @@
+{"time_utc": "2026-10-20T04:46:47.789615+00:00", "event": "forward_started", "call": "2c2f4e9ece414faf8bfa0fc1c5b4c250", "method": "pczt_extract", "request_sha256": "38525b07ae06966d450376538ed770e45ac123229a92359672de32c393310c34", "request_size": 35090}
+{"time_utc": "2026-10-20T04:46:48.004008+00:00", "event": "upstream_response_complete", "call": "2c2f4e9ece414faf8bfa0fc1c5b4c250", "method": "pczt_extract", "http_status": 200, "response_sha256": "90a406fdb95333c46b08c60da7352e79a933c918eff355716d16d70f043e2103", "response_size": 37437, "rpc_error": false, "drop": true}
+{"time_utc": "2026-10-20T04:46:48.006002+00:00", "event": "response_release_wait", "call": "2c2f4e9ece414faf8bfa0fc1c5b4c250", "method": "pczt_extract", "timeout_seconds": 60}
+{"time_utc": "2026-10-20T04:46:48.029086+00:00", "event": "response_release_observed", "call": "2c2f4e9ece414faf8bfa0fc1c5b4c250", "method": "pczt_extract"}
+{"time_utc": "2026-10-20T04:46:48.030095+00:00", "event": "response_dropped", "call": "2c2f4e9ece414faf8bfa0fc1c5b4c250", "method": "pczt_extract"}

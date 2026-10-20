@@ -1,0 +1,12 @@
+{
+  "scope": "actual disposable Zallet sender process restart",
+  "wallet_broadcast_before": false,
+  "wallet_broadcast_after": false,
+  "stop_rpc_returned": true,
+  "stop_started_unix": 1792471646.3114974,
+  "restart_started_unix": 1792471646.3277543,
+  "new_process_executable_matches": true,
+  "readiness_rpc_returned": true,
+  "direct_wallet_database_edits": false,
+  "credentials_and_wallet_contents_omitted": true
+}

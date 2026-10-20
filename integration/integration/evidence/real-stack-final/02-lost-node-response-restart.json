@@ -1,0 +1,67 @@
+{
+  "after": {
+    "attempts": [
+      {
+        "byte_digest": "c4ab730d0337b3fe2c5a273ea19a4d84e84907824ba0ddc26c07395903f8750f",
+        "outcome": "inflight"
+      },
+      {
+        "byte_digest": "c4ab730d0337b3fe2c5a273ea19a4d84e84907824ba0ddc26c07395903f8750f",
+        "outcome": "accepted"
+      }
+    ],
+    "byte_digest": "c4ab730d0337b3fe2c5a273ea19a4d84e84907824ba0ddc26c07395903f8750f",
+    "id": "node-acceptance-response-lost",
+    "inflight": null,
+    "last_error": null,
+    "owner": "3472bb8c-81cb-4540-bef2-1a16973329cb",
+    "raw_present": true,
+    "raw_sha256": "c4ab730d0337b3fe2c5a273ea19a4d84e84907824ba0ddc26c07395903f8750f",
+    "stage": "accepted",
+    "txid": "07720b2a62797c7fa32bc0d4918500333f1d88ddc84cb0e775bd6dac4382d8a5",
+    "wallet_owner": null
+  },
+  "before": {
+    "attempts": [
+      {
+        "byte_digest": "c4ab730d0337b3fe2c5a273ea19a4d84e84907824ba0ddc26c07395903f8750f",
+        "outcome": "inflight"
+      }
+    ],
+    "byte_digest": "c4ab730d0337b3fe2c5a273ea19a4d84e84907824ba0ddc26c07395903f8750f",
+    "id": "node-acceptance-response-lost",
+    "inflight": null,
+    "last_error": null,
+    "owner": "3472bb8c-81cb-4540-bef2-1a16973329cb",
+    "raw_present": true,
+    "raw_sha256": "c4ab730d0337b3fe2c5a273ea19a4d84e84907824ba0ddc26c07395903f8750f",
+    "stage": "committed",
+    "txid": "07720b2a62797c7fa32bc0d4918500333f1d88ddc84cb0e775bd6dac4382d8a5",
+    "wallet_owner": null
+  },
+  "chain_observation": {
+    "blockhash": "1bf1f85a99cceed7ed2d91b5bf84e9fbe08d0fa9fbbad547ee256d5e7db2e3ed",
+    "confirmations": 1,
+    "last_known_mined_block": "1bf1f85a99cceed7ed2d91b5bf84e9fbe08d0fa9fbbad547ee256d5e7db2e3ed",
+    "mining_reversed": false,
+    "prior_mining_no_longer_observed": false,
+    "required_confirmations": 1,
+    "state": "confirmed",
+    "tip_height": 111,
+    "txid": "07720b2a62797c7fa32bc0d4918500333f1d88ddc84cb0e775bd6dac4382d8a5"
+  },
+  "identical_wire_sha256": [
+    "c4ab730d0337b3fe2c5a273ea19a4d84e84907824ba0ddc26c07395903f8750f",
+    "c4ab730d0337b3fe2c5a273ea19a4d84e84907824ba0ddc26c07395903f8750f"
+  ],
+  "memo_sha256": "07c65536892061bc609c9ea3bb65ff80b05f6e8fc56211bd6c25b7475c29d523",
+  "no_additional_construction": true,
+  "passed": true,
+  "raw_sha256": "c4ab730d0337b3fe2c5a273ea19a4d84e84907824ba0ddc26c07395903f8750f",
+  "real_wallet_and_node": true,
+  "receiver_confirmations": 1,
+  "receiver_status": "mined",
+  "receiver_verified": true,
+  "scenario": "02-lost-node-response-restart",
+  "txid": "07720b2a62797c7fa32bc0d4918500333f1d88ddc84cb0e775bd6dac4382d8a5"
+}

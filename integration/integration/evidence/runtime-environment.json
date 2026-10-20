@@ -1,0 +1,75 @@
+{
+  "recorded_utc": "2026-10-20T04:44:02.310401+00:00",
+  "host": {
+    "os": "Windows",
+    "host_admin_changes": false,
+    "wsl_installed_by_task": false,
+    "docker_installed_by_task": false
+  },
+  "downloads": {
+    "qemu-w64-setup-20260811.exe": {
+      "url": "https://qemu.weilnetz.de/w64/qemu-w64-setup-20260811.exe",
+      "algorithm": "sha512",
+      "digest": "5bcf9eed634e8575a37b74f445af41a2fe4106da512d0c30c368301d4c105037fdfab40a5287367a28a957624cddebbc8c07e16c88ab6634f554cdf3d16bf543",
+      "verification_source": "https://qemu.weilnetz.de/w64/qemu-w64-setup-20260811.sha512"
+    },
+    "7zr.exe": {
+      "url": "https://github.com/ip7z/7zip/releases/download/26.04/7zr.exe",
+      "algorithm": "sha256",
+      "digest": "256feca8e274e5da655e2a284fabafd9f554365eb164862089dacd4e8276d282",
+      "verification_source": "https://api.github.com/repos/ip7z/7zip/releases/tags/26.04"
+    },
+    "7z2604-x64.exe": {
+      "url": "https://github.com/ip7z/7zip/releases/download/26.04/7z2604-x64.exe",
+      "algorithm": "sha256",
+      "digest": "d54bf805f9f3704d1e8db2fa3498ae7ef2df0312b40b558e7c71c734430a665d",
+      "verification_source": "https://api.github.com/repos/ip7z/7zip/releases/tags/26.04"
+    },
+    "ubuntu-24.04-minimal-20261017.img": {
+      "url": "https://cloud-images.ubuntu.com/minimal/releases/noble/release-20261017/ubuntu-24.04-minimal-cloudimg-amd64.img",
+      "algorithm": "sha256",
+      "digest": "b3296484e362ba2e713489a5de6225c719d9500962bde25d15f2f21e512c7658",
+      "verification_source": "https://cloud-images.ubuntu.com/minimal/releases/noble/release-20261017/SHA256SUMS"
+    },
+    "pycdlib-1.14.0.whl": {
+      "url": "https://files.pythonhosted.org/packages/0c/dd/95557c0e3bad0e8ba10c0f17d9deffb139b106eda528a744e544799cbbfb/pycdlib-1.14.0-py2.py3-none-any.whl",
+      "algorithm": "sha256",
+      "digest": "a905827335f0066af3fd416c5cf9b1f29dffaf4d0914b714555213d1809f38d4",
+      "verification_source": "https://pypi.org/pypi/pycdlib/1.14.0/json"
+    }
+  },
+  "qemu": {
+    "version": "11.1.0 (v11.1.0-12130-ge470268ff4)",
+    "installers_executed": false,
+    "mode": "unpacked workspace executable",
+    "acceleration": "whpx",
+    "machine": "pc,kernel-irqchip=off",
+    "cpu": "qemu64",
+    "vcpus": 4,
+    "memory_mib": 6144,
+    "failed_initial_boot": {
+      "machine": "q35",
+      "cpu": "host",
+      "error": "WHPX: Unexpected VP exit code 4",
+      "qmp_status": "paused",
+      "running": false
+    },
+    "tcg_used": false
+  },
+  "guest": {
+    "image": "Ubuntu Minimal 24.04 release20261017",
+    "kernel": "6.8.0-147-generic",
+    "ram_observed": "5.8 GiB total, 5.4 GiB available at idle",
+    "filesystem": "ext4 inside qcow2",
+    "disk_observed": "46 GiB filesystem, 45 GiB available at initial boot",
+    "initial_successful_boot_to_ssh_seconds_approx": 32,
+    "four_cpu_boot_cloud_init_finished_guest_seconds": 13.1
+  },
+  "capacity_observation": {
+    "two_vcpus": "DB-backed z_listaccounts remained waiting; getwalletinfo responded",
+    "four_vcpus_same_guest_disk": "account read and creation completed",
+    "inference": "consistent with four long-held sync handles and deadpool default2*logicalCPUs"
+  },
+  "qualified_scope": "guest boot/SSH, verified release process execution, isolated regtest and synthetic funding only",
+  "business_pczt_fault_results": "separate parent acceptance evidence"
+}

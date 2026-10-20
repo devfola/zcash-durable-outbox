@@ -1,0 +1,5 @@
+{"time_utc": "2026-10-20T04:45:56.400192+00:00", "event": "forward_started", "call": "60ee1e2443a2423d97bd9de6a14249fa", "method": "pczt_prove", "request_sha256": "94e02012faf1efcc2ad0102264e5896f0aac90a5a328391c6c04e228e04a1bbe", "request_size": 16228}
+{"time_utc": "2026-10-20T04:46:05.650291+00:00", "event": "upstream_response_complete", "call": "60ee1e2443a2423d97bd9de6a14249fa", "method": "pczt_prove", "http_status": 200, "response_sha256": "0ec9c82a1401576047f38f66b1cdeda7a0f3f4c3a3979fab9c733ab52419d15b", "response_size": 35051, "rpc_error": false, "drop": true}
+{"time_utc": "2026-10-20T04:46:05.653288+00:00", "event": "response_release_wait", "call": "60ee1e2443a2423d97bd9de6a14249fa", "method": "pczt_prove", "timeout_seconds": 60}
+{"time_utc": "2026-10-20T04:46:05.676926+00:00", "event": "response_release_observed", "call": "60ee1e2443a2423d97bd9de6a14249fa", "method": "pczt_prove"}
+{"time_utc": "2026-10-20T04:46:05.677932+00:00", "event": "response_dropped", "call": "60ee1e2443a2423d97bd9de6a14249fa", "method": "pczt_prove"}

@@ -1,0 +1,67 @@
+{
+  "execute": true,
+  "uses_real_wallets_and_node": true,
+  "order": [
+    "ordinary/repeat",
+    "changed-intent",
+    "same-ID concurrency",
+    "bounty/refund two-ID serialization",
+    "lost node acceptance/app restart",
+    "offline integrity copy",
+    "terminal primary extraction loss",
+    "terminal separate secondary COMMIT rejection"
+  ],
+  "wallet_database_edits": false,
+  "automatic_wallet_operation_replay": false,
+  "wallet_owner_release_or_lease_stealing": false,
+  "terminal_faults_quarantine_distinct_wallets": true
+}
+{"progress": "real_rpc_forwarded", "stage": "pczt_create"}
+{"progress": "real_rpc_forwarded", "stage": "pczt_prove"}
+{"progress": "real_rpc_forwarded", "stage": "pczt_sign"}
+{"progress": "real_rpc_forwarded", "stage": "pczt_extract"}
+{"progress": "real_rpc_forwarded", "stage": "sendrawtransaction"}
+{"scenario": "01-ordinary-and-repeat", "passed": true}
+{"scenario": "04-changed-intent-rejected", "passed": true}
+{"progress": "real_rpc_forwarded", "stage": "pczt_create"}
+{"progress": "real_rpc_forwarded", "stage": "pczt_prove"}
+{"progress": "real_rpc_forwarded", "stage": "pczt_sign"}
+{"progress": "real_rpc_forwarded", "stage": "pczt_extract"}
+{"progress": "real_rpc_forwarded", "stage": "sendrawtransaction"}
+{"scenario": "03-concurrent-same-id", "passed": true}
+{"progress": "real_rpc_forwarded", "stage": "pczt_create"}
+{"progress": "real_rpc_forwarded", "stage": "pczt_prove"}
+{"progress": "real_rpc_forwarded", "stage": "pczt_sign"}
+{"progress": "real_rpc_forwarded", "stage": "pczt_extract"}
+{"progress": "real_rpc_forwarded", "stage": "sendrawtransaction"}
+{"progress": "real_rpc_forwarded", "stage": "pczt_create"}
+{"progress": "real_rpc_forwarded", "stage": "pczt_prove"}
+{"progress": "real_rpc_forwarded", "stage": "pczt_sign"}
+{"progress": "real_rpc_forwarded", "stage": "pczt_extract"}
+{"progress": "real_rpc_forwarded", "stage": "sendrawtransaction"}
+{"scenario": "05-two-ids-and-reference-app", "passed": true}
+{"progress": "real_rpc_forwarded", "stage": "pczt_create"}
+{"progress": "real_rpc_forwarded", "stage": "pczt_prove"}
+{"progress": "real_rpc_forwarded", "stage": "pczt_sign"}
+{"progress": "real_rpc_forwarded", "stage": "pczt_extract"}
+{"progress": "real_rpc_forwarded", "stage": "sendrawtransaction"}
+{"progress": "real_rpc_forwarded", "stage": "sendrawtransaction"}
+{"scenario": "02-lost-node-response-restart", "passed": true}
+{"scenario": "09-integrity-copy-rejected", "passed": true}
+{"progress": "real_rpc_forwarded", "stage": "pczt_create"}
+{"progress": "real_rpc_forwarded", "stage": "pczt_prove"}
+{"progress": "real_rpc_forwarded", "stage": "pczt_sign"}
+{"progress": "real_rpc_forwarded", "stage": "pczt_extract"}
+{"scenario": "07-wallet-response-loss-quarantine", "passed": true}
+{"scenario": "08-app-restart-and-remote-completion", "passed": true}
+{"progress": "real_rpc_forwarded", "stage": "pczt_create"}
+Traceback (most recent call last):
+  File "C:\Users\NewOwner\Documents\Codex\2026-10-19\files-pasted-by-the-user-build\outputs\zcash-durable-outbox\integration\test_real_stack.py", line 668, in <module>
+    main()
+  File "C:\Users\NewOwner\Documents\Codex\2026-10-19\files-pasted-by-the-user-build\outputs\zcash-durable-outbox\integration\test_real_stack.py", line 650, in main
+    run_terminal_commit_failure(h)
+  File "C:\Users\NewOwner\Documents\Codex\2026-10-19\files-pasted-by-the-user-build\outputs\zcash-durable-outbox\integration\test_real_stack.py", line 555, in run_terminal_commit_failure
+    require(status == 500 and "FOREIGN KEY" in error.get("error", "").upper(), "actual deferred SQLite COMMIT rejection not observed")
+  File "C:\Users\NewOwner\Documents\Codex\2026-10-19\files-pasted-by-the-user-build\outputs\zcash-durable-outbox\integration\test_real_stack.py", line 36, in require
+    raise AssertionError(message)
+AssertionError: actual deferred SQLite COMMIT rejection not observed
