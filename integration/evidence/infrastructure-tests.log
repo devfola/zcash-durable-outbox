@@ -1,0 +1,14 @@
+test_new_directory_consensus_parity_and_no_wallet_broadcast (__main__.ConfigTests.test_new_directory_consensus_parity_and_no_wallet_broadcast) ... ok
+test_concurrent_calls_consume_one_drop (__main__.ProxyTests.test_concurrent_calls_consume_one_drop) ... ok
+test_drop_after_actual_upstream_action_then_pass_identical_retry (__main__.ProxyTests.test_drop_after_actual_upstream_action_then_pass_identical_retry) ... ok
+test_reject_nonloopback (__main__.ProxyTests.test_reject_nonloopback) ... ok
+test_release_handshake_rejects_existing_file_and_excess_timeout (__main__.ProxyTests.test_release_handshake_rejects_existing_file_and_excess_timeout) ... ok
+test_release_handshake_retains_completed_response_after_caller_death (__main__.ProxyTests.test_release_handshake_retains_completed_response_after_caller_death) ... ok
+test_release_timeout_drops_without_delivering_or_repeating_upstream (__main__.ProxyTests.test_release_timeout_drops_without_delivering_or_repeating_upstream) ... ok
+test_remote_completes_after_caller_socket_dies (__main__.ProxyTests.test_remote_completes_after_caller_socket_dies) ... ok
+test_transaction_digest_ignores_rpc_id_and_never_logs_raw (__main__.ProxyTests.test_transaction_digest_ignores_rpc_id_and_never_logs_raw) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 6.677s
+
+OK

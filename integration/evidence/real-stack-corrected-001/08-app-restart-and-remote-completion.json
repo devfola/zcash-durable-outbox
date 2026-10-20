@@ -1,0 +1,10 @@
+{
+  "actual_app_restart": true,
+  "durable_owner_retained": true,
+  "passed": true,
+  "prior_wallet_restart_evidence_is_external": false,
+  "prior_wallet_restart_evidence_sha256": null,
+  "real_wallet_and_node": true,
+  "remote_completion_after_app_death": true,
+  "scenario": "08-app-restart-and-remote-completion"
+}

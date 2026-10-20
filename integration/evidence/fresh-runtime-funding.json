@@ -1,0 +1,67 @@
+{
+  "scope": "actual packaged fresh preparation/funding with verified reused official binaries inside the existing guest; no new host download or VM provisioning",
+  "fresh_root": "/home/outbox/final-run",
+  "old_root_preserved": "/home/outbox/regtest",
+  "old_claims_untouched": true,
+  "fresh_funding_completed": true,
+  "archive_sha256": {
+    "zallet-v0.1.0-beta.3-linux-amd64.tar.gz": "1df2398df016ae6e9a1cba3f8ef0cc86ca0d7b48a0934b34df6f68114ebe9306",
+    "zebrad-6.2.3-x86_64-unknown-linux-gnu.tar.gz": "16305a3071f35d1b09790e6713ff4db30c9fb31a110c569eaa6386404079bd0e"
+  },
+  "binary_sha256": {
+    "zallet": "523bf86a14cba2dfb1ea048c3a3d6ccc68bde0dbb92da60d44ce12568dea1c5a",
+    "zallet-zaino": "e602e4a3d4e919c155b8f05dae29f0b9311631f167eaf25455166edf268208a7",
+    "zallet-zebra": "82cca947c0616a18ec884a73e986f30f87c160be5102de976182509b4cdb964a",
+    "zebrad": "ae7d14fd529c4fe03cc03e1a9c1b0f0a10cdca2fd416529f07073f0e0b369255"
+  },
+  "reused_verified_existing": true,
+  "recipe_sha256": {
+    "prepare_fresh_run.py": "c3432e6c90b9d322380f347b0702cf762587a4f49bd24c0503bad51fc53e0156",
+    "bootstrap-release-linux.py": "763c803346b395fcbec38cfc0a561f85b1e59cf50ca106095792cae51aae7a91",
+    "bootstrap_registration.py": "9c3b0fe06083397e0acb6925b8bb41fe5a3a39dad2a7c2a88656c22e5e59fb7f",
+    "configure-regtest.py": "7c9db6d2d6c44b8653d4ce8079ffdfd04678f1cd37605aa96a658d2f3b5cba4c",
+    "fund-release-regtest.py": "8a0165c2dd3843b0cf17236573c33829efd8437874367ecf24dad4897a785044",
+    "pinned-sources.json": "f6071830ae6275080e2aa3e21f9b9e0cd8386e92363dedb75224e9fbe4f6c53b"
+  },
+  "old_process_graceful_stops": {
+    "sender": {
+      "method": "RPC stop once",
+      "stopped": true,
+      "elapsed_seconds": 0.128
+    },
+    "receiver": {
+      "method": "RPC stop once",
+      "stopped": true,
+      "elapsed_seconds": 0.118
+    },
+    "node": {
+      "method": "SIGTERM",
+      "stopped": true,
+      "elapsed_seconds": 0.207
+    }
+  },
+  "actual_registration_indices": {
+    "sender": 1,
+    "receiver": 4609798954
+  },
+  "funding_chain_blocks_generated": 107,
+  "funding_status": "success",
+  "funding_txid": "aed1e58687bad21b7169e12332848e0deeb99d4be69a23352883dbefe7ca5dc8",
+  "funding_operation_broadcast": true,
+  "wallet_broadcast_after_funding": {
+    "sender": false,
+    "receiver": false
+  },
+  "spending_keys_viewing_keys_credentials_addresses_pczts_and_raw_transactions_omitted": true,
+  "collection": "file reads only; no wallet/node RPC or process operation",
+  "recorded_setup_balance_synthetic_zec": {
+    "transparent": "631.25000000",
+    "private": "6.24985000",
+    "total": "637.49985000"
+  },
+  "recorded_setup_listunspent_entry_count": 2,
+  "recorded_setup_listunspent_pool_counts": {
+    "transparent": 2
+  },
+  "observations_are_setup_snapshots_not_current_balances": true
+}

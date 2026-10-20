@@ -1,0 +1,8 @@
+{
+  "method": "invalidateblock",
+  "params": [
+    "0f90f258994cc48d857c1c784d8155eb54b41ff1169f95eecf6ac355cf2b4a25"
+  ],
+  "result": null,
+  "time_unix": 1792473312.897006
+}

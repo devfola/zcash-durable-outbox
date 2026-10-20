@@ -1,0 +1,14 @@
+{
+  "case": "unsigned-rejects-completed-mode",
+  "expected_success": false,
+  "exit_code": 2,
+  "passed": true,
+  "elapsed_seconds": 4.625,
+  "report": {
+    "artifact_effects_verified": false,
+    "authorization_verified": false,
+    "error": "independent PCZT proof/authorization extraction failed: Ironwood(Extract(MissingSpendAuthSig))",
+    "live_adapter_qualified": false,
+    "publication_enabled": false
+  }
+}

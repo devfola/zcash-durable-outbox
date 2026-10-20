@@ -1,0 +1,14 @@
+{
+  "case": "changed-amount",
+  "expected_success": false,
+  "exit_code": 2,
+  "passed": true,
+  "elapsed_seconds": 0.297,
+  "report": {
+    "artifact_effects_verified": false,
+    "authorization_verified": false,
+    "error": "payment amount mismatch",
+    "live_adapter_qualified": false,
+    "publication_enabled": false
+  }
+}

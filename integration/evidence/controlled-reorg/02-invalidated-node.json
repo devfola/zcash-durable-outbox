@@ -1,0 +1,112 @@
+{
+  "bestblockhash": "c7b242d232fa7d6b7429c7724c46065b8bbc70b6fa6441f5f1303af2833a97f4",
+  "blocks": 109,
+  "chain": "test",
+  "chainSupply": {
+    "chainValue": 681.25,
+    "chainValueZat": 68125000000,
+    "monitored": true
+  },
+  "chainwork": 0,
+  "commitments": 0,
+  "consensus": {
+    "chaintip": "37a5165b",
+    "nextblock": "37a5165b"
+  },
+  "difficulty": 1.0,
+  "estimatedheight": 6610571,
+  "headers": 109,
+  "pruned": false,
+  "size_on_disk": 0,
+  "upgrades": {
+    "2bb40e60": {
+      "activationheight": 1,
+      "name": "Blossom",
+      "status": "active"
+    },
+    "37a5165b": {
+      "activationheight": 2,
+      "name": "NU6.3",
+      "status": "active"
+    },
+    "4dec4df0": {
+      "activationheight": 2,
+      "name": "NU6.1",
+      "status": "active"
+    },
+    "5437f330": {
+      "activationheight": 2,
+      "name": "NU6.2",
+      "status": "active"
+    },
+    "5ba81b19": {
+      "activationheight": 1,
+      "name": "Overwinter",
+      "status": "active"
+    },
+    "76b809bb": {
+      "activationheight": 1,
+      "name": "Sapling",
+      "status": "active"
+    },
+    "c2d6d0b4": {
+      "activationheight": 2,
+      "name": "NU5",
+      "status": "active"
+    },
+    "c8e71055": {
+      "activationheight": 2,
+      "name": "NU6",
+      "status": "active"
+    },
+    "e9ff75a6": {
+      "activationheight": 1,
+      "name": "Canopy",
+      "status": "active"
+    },
+    "f5b9230b": {
+      "activationheight": 1,
+      "name": "Heartwood",
+      "status": "active"
+    }
+  },
+  "valuePools": [
+    {
+      "chainValue": 675.0005,
+      "chainValueZat": 67500050000,
+      "id": "transparent",
+      "monitored": true
+    },
+    {
+      "chainValue": 0.0,
+      "chainValueZat": 0,
+      "id": "sprout",
+      "monitored": false
+    },
+    {
+      "chainValue": 0.0,
+      "chainValueZat": 0,
+      "id": "sapling",
+      "monitored": false
+    },
+    {
+      "chainValue": 0.0,
+      "chainValueZat": 0,
+      "id": "orchard",
+      "monitored": false
+    },
+    {
+      "chainValue": 0.0,
+      "chainValueZat": 0,
+      "id": "lockbox",
+      "monitored": false
+    },
+    {
+      "chainValue": 6.2495,
+      "chainValueZat": 624950000,
+      "id": "ironwood",
+      "monitored": true
+    }
+  ],
+  "verificationprogress": 1.0
+}

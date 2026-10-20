@@ -1,0 +1,41 @@
+{
+  "byte_digest": "c047ed72982034dae3986cc2c5f50182ffbc11a20edf86fb9e2d29695b334580",
+  "chain_observation": {
+    "blockhash": null,
+    "confirmations": 0,
+    "last_known_mined_block": "0f90f258994cc48d857c1c784d8155eb54b41ff1169f95eecf6ac355cf2b4a25",
+    "mining_reversed": false,
+    "prior_mining_no_longer_observed": true,
+    "required_confirmations": 1,
+    "state": "unknown",
+    "tip_height": 109,
+    "txid": "502ca67a9802a4491c373bf645040866b3861751caf5d7f750f3785575c8ad05"
+  },
+  "id": "bounty:real-stack-award",
+  "inflight": null,
+  "intent": {
+    "account": "83c2488c-fe1f-43f6-b4e7-b73221cfa1e6",
+    "expiry": {
+      "max_height": 209,
+      "min_height": 110
+    },
+    "fee": {
+      "max_fee_zat": 50000,
+      "rule": "zip317"
+    },
+    "network": "regtest",
+    "privacy": "FullPrivacy",
+    "recipient": {
+      "address": "uregtest1pdsv43chlcc7agdj42l5z3f5snungr604kjwelepw4ky9p40fktg7rgqqgxpv3kxjy40r0q2u7mxtlvprx3hm84dcspzmrssgstf8a93",
+      "amount_zat": 100000,
+      "memo_hex": "7265616c2d6f7574626f782d64656d6f"
+    },
+    "wallet": "disposable-sender"
+  },
+  "intent_digest": "c348867f90fa818592398663a2bf54cd7e58e69491f5fd507b82f767b761b78e",
+  "last_error": null,
+  "owner": "d7d03a1f-741b-4512-a1d8-057334f36328",
+  "stage": "accepted",
+  "submission_attempts": 1,
+  "txid": "502ca67a9802a4491c373bf645040866b3861751caf5d7f750f3785575c8ad05"
+}

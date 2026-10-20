@@ -1,0 +1,48 @@
+{
+  "recorded_utc": "2026-10-20T04:08:13.409862+00:00",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "programs": {
+    "rustc": "C:\\Users\\NewOwner\\.cargo\\bin\\rustc.EXE",
+    "cargo": "C:\\Users\\NewOwner\\.cargo\\bin\\cargo.EXE",
+    "git": "C:\\Program Files\\Git\\cmd\\git.EXE",
+    "cmake": "C:\\Strawberry\\c\\bin\\cmake.EXE",
+    "clang": null,
+    "protoc": null,
+    "docker": null,
+    "wsl": "C:\\WINDOWS\\system32\\wsl.EXE"
+  },
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\NewOwner\\.cargo\\bin\\rustc.EXE",
+        "--version"
+      ],
+      "exit_code": 0,
+      "output": "rustc 1.89.0 (29483883e 2025-08-04)"
+    },
+    {
+      "command": [
+        "C:\\Users\\NewOwner\\.cargo\\bin\\cargo.EXE",
+        "--version"
+      ],
+      "exit_code": 0,
+      "output": "cargo 1.89.0 (c24e10642 2025-06-23)"
+    },
+    {
+      "command": [
+        "C:\\WINDOWS\\system32\\wsl.EXE",
+        "--status"
+      ],
+      "exit_code": 50,
+      "output": "The Windows Subsystem for Linux is not installed. You can install by running 'wsl.exe --install'.\r\r\nFor more information please visit https://aka.ms/wslinstall"
+    }
+  ],
+  "blockers": [
+    "Upstream documents the pinned Zallet zebra backend as Linux-only. A native Windows backend was not built or runtime-qualified.",
+    "Docker CLI is absent. No Linux container runtime was provisioned.",
+    "No pinned binary directory supplied; provide --bin-dir after a successful source build."
+  ],
+  "runtime_qualified": false,
+  "status": "blocked"
+}

@@ -1,0 +1,266 @@
+{
+  "completed_scenarios": [
+    {
+      "chain_observation": {
+        "blockhash": "07610cb42ffcdecb4e9d81337d454a000abad587be6ef1e29bc7e153173b9fc7",
+        "confirmations": 1,
+        "last_known_mined_block": "07610cb42ffcdecb4e9d81337d454a000abad587be6ef1e29bc7e153173b9fc7",
+        "mining_reversed": false,
+        "prior_mining_no_longer_observed": false,
+        "required_confirmations": 1,
+        "state": "confirmed",
+        "tip_height": 111,
+        "txid": "95aeffa6e451b14a0794dfedc4767f0ee1be69ba7b06f242cf4eed8a7b7fb50b"
+      },
+      "memo_sha256": "07c65536892061bc609c9ea3bb65ff80b05f6e8fc56211bd6c25b7475c29d523",
+      "passed": true,
+      "raw_sha256": "e88d5c3b9a5a7abacf8c14017ba4b28119a993c3486f278f1e8032dc357323d7",
+      "real_wallet_and_node": true,
+      "receiver_confirmations": -1,
+      "receiver_verified": true,
+      "scenario": "01-ordinary-and-repeat",
+      "txid": "95aeffa6e451b14a0794dfedc4767f0ee1be69ba7b06f242cf4eed8a7b7fb50b",
+      "wallet_construction_calls": {
+        "pczt_create": 1,
+        "pczt_extract": 1,
+        "pczt_prove": 1,
+        "pczt_sign": 1
+      }
+    },
+    {
+      "conflicts": 5,
+      "no_additional_construction": true,
+      "passed": true,
+      "real_wallet_and_node": true,
+      "scenario": "04-changed-intent-rejected"
+    },
+    {
+      "chain_observation": {
+        "blockhash": "aa63032637fb7dd5527ce9e2698ff6b5b3bbe6da6dfa55f77f485f175c3e171e",
+        "confirmations": 1,
+        "last_known_mined_block": "aa63032637fb7dd5527ce9e2698ff6b5b3bbe6da6dfa55f77f485f175c3e171e",
+        "mining_reversed": false,
+        "prior_mining_no_longer_observed": false,
+        "required_confirmations": 1,
+        "state": "confirmed",
+        "tip_height": 112,
+        "txid": "534eb95974a381d03382adc22a4d22709983193e865a01dc29f31ba47b3ccca3"
+      },
+      "memo_sha256": "07c65536892061bc609c9ea3bb65ff80b05f6e8fc56211bd6c25b7475c29d523",
+      "one_real_pipeline": true,
+      "passed": true,
+      "raw_sha256": "28c629ecdd5335986a328a2b1c25938ae7458f2a475f38353bdecc016446dab2",
+      "real_wallet_and_node": true,
+      "receiver_confirmations": -1,
+      "receiver_verified": true,
+      "scenario": "03-concurrent-same-id",
+      "statuses": [
+        409,
+        200,
+        409,
+        409
+      ],
+      "txid": "534eb95974a381d03382adc22a4d22709983193e865a01dc29f31ba47b3ccca3"
+    },
+    {
+      "actual_service_restart": true,
+      "business_results": [
+        {
+          "operation": "query",
+          "paid": true,
+          "payment_id": "bounty:real-stack-award",
+          "txid": "86f2da306ad289d8d161c79cc9e5815569b7e832099193aa02e161064e6aeb4c"
+        },
+        {
+          "operation": "pay",
+          "paid": true,
+          "payment_id": "bounty:real-stack-award",
+          "txid": "86f2da306ad289d8d161c79cc9e5815569b7e832099193aa02e161064e6aeb4c"
+        },
+        {
+          "operation": "refresh",
+          "paid": true,
+          "payment_id": "bounty:real-stack-award",
+          "txid": "86f2da306ad289d8d161c79cc9e5815569b7e832099193aa02e161064e6aeb4c"
+        },
+        {
+          "operation": "query",
+          "paid": true,
+          "payment_id": "refund:real-stack-purchase",
+          "txid": "36223154424415dece4fb086100c41851ab3acaf8676c97fc27f5fa5fcf5ea0c"
+        },
+        {
+          "operation": "pay",
+          "paid": true,
+          "payment_id": "refund:real-stack-purchase",
+          "txid": "36223154424415dece4fb086100c41851ab3acaf8676c97fc27f5fa5fcf5ea0c"
+        },
+        {
+          "operation": "refresh",
+          "paid": true,
+          "payment_id": "refund:real-stack-purchase",
+          "txid": "36223154424415dece4fb086100c41851ab3acaf8676c97fc27f5fa5fcf5ea0c"
+        }
+      ],
+      "durable_business_ledger": true,
+      "observations": [
+        {
+          "chain_observation": {
+            "blockhash": "5c74c0c07964531891a77c04b01f07565c871d25ed3eb4e61a2492a147399b92",
+            "confirmations": 1,
+            "last_known_mined_block": "5c74c0c07964531891a77c04b01f07565c871d25ed3eb4e61a2492a147399b92",
+            "mining_reversed": false,
+            "prior_mining_no_longer_observed": false,
+            "required_confirmations": 1,
+            "state": "confirmed",
+            "tip_height": 113,
+            "txid": "86f2da306ad289d8d161c79cc9e5815569b7e832099193aa02e161064e6aeb4c"
+          },
+          "memo_sha256": "07c65536892061bc609c9ea3bb65ff80b05f6e8fc56211bd6c25b7475c29d523",
+          "raw_sha256": "38376cb5f96ed3fbdad1451e13c8f1a39cde8db924eec8000b122d422603ea8c",
+          "receiver_confirmations": -1,
+          "receiver_verified": true,
+          "txid": "86f2da306ad289d8d161c79cc9e5815569b7e832099193aa02e161064e6aeb4c"
+        },
+        {
+          "raw_sha256": "a6463c43fa2fb38079b57639588f8f23ca2036605f302056cb7b890d45025eaf",
+          "receiver_verified": true,
+          "txid": "36223154424415dece4fb086100c41851ab3acaf8676c97fc27f5fa5fcf5ea0c"
+        }
+      ],
+      "passed": true,
+      "real_wallet_and_node": true,
+      "scenario": "05-two-ids-and-reference-app",
+      "stages_serialized": true
+    },
+    {
+      "after": {
+        "attempts": [
+          {
+            "byte_digest": "1c9efd64aec4da9e443d52e2fa36a185ab85be62fba188861fb206e152b3cd6b",
+            "outcome": "inflight"
+          },
+          {
+            "byte_digest": "1c9efd64aec4da9e443d52e2fa36a185ab85be62fba188861fb206e152b3cd6b",
+            "outcome": "accepted"
+          }
+        ],
+        "byte_digest": "1c9efd64aec4da9e443d52e2fa36a185ab85be62fba188861fb206e152b3cd6b",
+        "id": "node-acceptance-response-lost",
+        "inflight": null,
+        "last_error": null,
+        "owner": "b6b11f66-e173-45e6-a500-53f338ccf2cc",
+        "raw_present": true,
+        "raw_sha256": "1c9efd64aec4da9e443d52e2fa36a185ab85be62fba188861fb206e152b3cd6b",
+        "stage": "accepted",
+        "txid": "29ce5821ba908b93bc85892b3cf5f38757e96248732c47cfde39701bcc3913f2",
+        "wallet_owner": null
+      },
+      "before": {
+        "attempts": [
+          {
+            "byte_digest": "1c9efd64aec4da9e443d52e2fa36a185ab85be62fba188861fb206e152b3cd6b",
+            "outcome": "inflight"
+          }
+        ],
+        "byte_digest": "1c9efd64aec4da9e443d52e2fa36a185ab85be62fba188861fb206e152b3cd6b",
+        "id": "node-acceptance-response-lost",
+        "inflight": null,
+        "last_error": null,
+        "owner": "b6b11f66-e173-45e6-a500-53f338ccf2cc",
+        "raw_present": true,
+        "raw_sha256": "1c9efd64aec4da9e443d52e2fa36a185ab85be62fba188861fb206e152b3cd6b",
+        "stage": "committed",
+        "txid": "29ce5821ba908b93bc85892b3cf5f38757e96248732c47cfde39701bcc3913f2",
+        "wallet_owner": null
+      },
+      "chain_observation": {
+        "blockhash": "08aad31c0a67b984106d919c29063a9665026731262325869fd3b92407e8dd5a",
+        "confirmations": 1,
+        "last_known_mined_block": "08aad31c0a67b984106d919c29063a9665026731262325869fd3b92407e8dd5a",
+        "mining_reversed": false,
+        "prior_mining_no_longer_observed": false,
+        "required_confirmations": 1,
+        "state": "confirmed",
+        "tip_height": 114,
+        "txid": "29ce5821ba908b93bc85892b3cf5f38757e96248732c47cfde39701bcc3913f2"
+      },
+      "identical_wire_sha256": [
+        "1c9efd64aec4da9e443d52e2fa36a185ab85be62fba188861fb206e152b3cd6b",
+        "1c9efd64aec4da9e443d52e2fa36a185ab85be62fba188861fb206e152b3cd6b"
+      ],
+      "memo_sha256": "07c65536892061bc609c9ea3bb65ff80b05f6e8fc56211bd6c25b7475c29d523",
+      "no_additional_construction": true,
+      "passed": true,
+      "raw_sha256": "1c9efd64aec4da9e443d52e2fa36a185ab85be62fba188861fb206e152b3cd6b",
+      "real_wallet_and_node": true,
+      "receiver_confirmations": -1,
+      "receiver_verified": true,
+      "scenario": "02-lost-node-response-restart",
+      "txid": "29ce5821ba908b93bc85892b3cf5f38757e96248732c47cfde39701bcc3913f2"
+    },
+    {
+      "get_status": 500,
+      "no_construction": true,
+      "no_submission": true,
+      "original_database_modified": false,
+      "passed": true,
+      "real_wallet_and_node": true,
+      "retry_status": 500,
+      "scenario": "09-integrity-copy-rejected"
+    },
+    {
+      "after": {
+        "attempts": [],
+        "byte_digest": null,
+        "id": "terminal-extraction-response-loss",
+        "inflight": "extract",
+        "last_error": null,
+        "owner": "805e30eb-0194-4db0-b48d-a477048a6083",
+        "raw_present": false,
+        "raw_sha256": null,
+        "stage": "signed",
+        "txid": null,
+        "wallet_owner": "terminal-extraction-response-loss"
+      },
+      "another_id_status": 409,
+      "before": {
+        "attempts": [],
+        "byte_digest": null,
+        "id": "terminal-extraction-response-loss",
+        "inflight": "extract",
+        "last_error": null,
+        "owner": "805e30eb-0194-4db0-b48d-a477048a6083",
+        "raw_present": false,
+        "raw_sha256": null,
+        "stage": "signed",
+        "txid": null,
+        "wallet_owner": "terminal-extraction-response-loss"
+      },
+      "caller_killed_before_held_response_delivery": true,
+      "caller_killed_before_remote_completion": true,
+      "no_more_construction_on_primary": true,
+      "no_submission": true,
+      "passed": true,
+      "real_wallet_and_node": true,
+      "remote_operation_completed": true,
+      "retry_status": 409,
+      "scenario": "07-wallet-response-loss-quarantine",
+      "wallet_quarantined": true
+    },
+    {
+      "actual_app_restart": true,
+      "durable_owner_retained": true,
+      "passed": true,
+      "prior_wallet_restart_evidence_is_external": true,
+      "prior_wallet_restart_evidence_sha256": "9a9450a19657e792baa82eccbdb3b8dc299d5a6e0a7f83934a0aeda59f6093e9",
+      "real_wallet_and_node": true,
+      "remote_completion_after_app_death": true,
+      "scenario": "08-app-restart-and-remote-completion"
+    }
+  ],
+  "error": "actual deferred SQLite COMMIT rejection not observed",
+  "error_type": "AssertionError",
+  "instruction": "Do not rerun/release owners/switch DBs; inspect durable states and reconcile.",
+  "passed": false
+}

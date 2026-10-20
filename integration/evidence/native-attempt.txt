@@ -1,0 +1,64 @@
+Recorded during the 2026-10-20 America/Toronto session.
+No actual Zallet/Zebra process or chain transaction was executed.
+
+1. Source pin lookup (network access required the approved sandbox escalation):
+git ls-remote https://github.com/zcash/zallet.git HEAD
+e5c16c464d2d641e5a7c386f3682cfa37e1c43f9 HEAD
+
+git ls-remote https://github.com/ZcashFoundation/zebra.git HEAD refs/tags/v6*
+v6.2.3 annotated tag: 60c5732ca14673b6995e266c269fed011ac19b9c
+v6.2.3 dereferenced commit: 7121c82ba6795a151523d5b308a19743f4a1ade7
+
+Initially fetched v6.4.2 to inspect the current source cohort. It uses
+zebra-chain13.0.1 / zebra-rpc17.0.0 / zebra-state14.0.0. Selected v6.2.3
+instead because its exact cohort matches the inspected Zallet backend lockfile:
+zebra-chain11.3.0 / zebra-rpc15.0.0 / zebra-state12.0.1 / state format28.0.0.
+This is source compatibility evidence, not runtime qualification.
+
+2. Host tools:
+rustc 1.89.0 (29483883e 2025-08-04)
+cargo 1.89.0 (c24e10642 2025-06-23)
+Visual Studio Community 2022 vcvars64.bat exists; MSVC 14.44.35207 present.
+cl, clang, protoc and docker were not on PATH. CMake and git present.
+wsl --status exited 50:
+The Windows Subsystem for Linux is not installed. You can install by running 'wsl.exe --install'.
+No WSL, Docker, Linux distribution, or OS prerequisite was installed.
+
+3. User-space compiler provision (workspace paths only):
+$env:RUSTUP_HOME=(Join-Path $PWD 'work/stack/rustup')
+$env:CARGO_HOME=(Join-Path $PWD 'work/stack/cargo')
+rustup toolchain install 1.95.0 --profile minimal --no-self-update
+
+Result: 1.95.0-x86_64-pc-windows-msvc installed - rustc 1.95.0 (59807616e 2026-04-14)
+The host's default ~/.rustup was not changed; this was a separate workspace RUSTUP_HOME.
+
+4. Narrow native backend feasibility command, no unbounded compile:
+$env:RUSTUP_HOME=(Join-Path $PWD 'work/stack/rustup')
+$env:CARGO_HOME=(Join-Path $PWD 'work/stack/cargo')
+rustup run 1.95.0 cargo check --manifest-path work/qualification/zallet/backends/zebra/Cargo.toml --locked --offline --bin zallet-zebra
+
+Exit 1:
+error: failed to load source for dependency `equihash`
+Caused by:
+  unable to update https://github.com/zcash/librustzcash.git?rev=1f6bb2072e7fcb142b0d90ff7b267a8699a84818#1f6bb207
+Caused by:
+  can't checkout from 'https://github.com/zcash/librustzcash.git': you are in the offline mode (--offline)
+
+This error proves the narrow check did not compile the backend. It is not proof
+of a compiler/platform incompatibility. Upstream's pinned platform support
+document explicitly says no chain backend currently runs on Windows; the
+documented backend path is Linux-only. No full unsupported backend build was
+attempted after discovering that constraint.
+
+5. Infrastructure verification (NOT actual-wallet evidence):
+python -m unittest discover -s integration -p test_infrastructure.py -v
+Sandbox run: three socket-based tests were denied WinError 10013.
+Approved loopback-only escalation run: all five tests passed (3.373 seconds).
+Tests use temporary standard-library HTTP servers, not Zallet or Zebra.
+
+"C:/Program Files/Git/bin/bash.exe" -n integration/bootstrap-linux.sh
+Sandbox launch denied NtCreateDirectoryObject 0xC0000022 before parsing.
+Approved syntax-only escalation: exit 0. No bootstrap commands executed.
+
+python -m py_compile integration/preflight.py integration/configure-regtest.py integration/fault_proxy.py integration/test_infrastructure.py
+Exit 0.

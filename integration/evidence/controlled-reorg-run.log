@@ -1,0 +1,56 @@
+{
+  "execute": true,
+  "payment_id": "bounty:real-stack-award",
+  "primary_db": "C:\\Users\\NewOwner\\Documents\\Codex\\2026-10-19\\files-pasted-by-the-user-build\\work\\real-suite-final\\primary.db",
+  "business_ledger": "C:\\Users\\NewOwner\\Documents\\Codex\\2026-10-19\\files-pasted-by-the-user-build\\work\\real-suite-final\\successes\\business.db",
+  "work_dir": "C:\\Users\\NewOwner\\Documents\\Codex\\2026-10-19\\files-pasted-by-the-user-build\\work\\controlled-reorg-final",
+  "evidence_dir": "C:\\Users\\NewOwner\\Documents\\Codex\\2026-10-19\\files-pasted-by-the-user-build\\outputs\\zcash-durable-outbox\\integration\\evidence\\controlled-reorg",
+  "node_profile": "fixed regtest genesis and exact NU6.3 activation schedule",
+  "requires_successful_nine_scenario_summary": true,
+  "sequence": [
+    "confirm existing payment and paid binding",
+    "invalidate its real mined block once",
+    "observe confirmation loss and paid false",
+    "finally reconsider same block once",
+    "verify original tip, confirmed observation and paid true"
+  ],
+  "automatic_replay": false,
+  "wallet_rpc_calls": false,
+  "construction_or_submission_calls": false,
+  "sql_updates_to_outbox": false,
+  "release_or_replace_quarantined_owners": false,
+  "unknown_lookup_proves_mining_reversal": false
+}
+{
+  "passed": true,
+  "real_node_and_service": true,
+  "payment_id": "bounty:real-stack-award",
+  "txid": "502ca67a9802a4491c373bf645040866b3861751caf5d7f750f3785575c8ad05",
+  "blockhash": "0f90f258994cc48d857c1c784d8155eb54b41ff1169f95eecf6ac355cf2b4a25",
+  "original_chain_restored": true,
+  "control_rpc_attempts": {
+    "invalidateblock": 1,
+    "reconsiderblock": 1
+  },
+  "reference_paid_transition": [
+    true,
+    false,
+    true
+  ],
+  "invalidated_lookup_state": "unknown",
+  "invalidated_mining_reversed": false,
+  "controlled_node_invalidation_receipt_present": true,
+  "unknown_lookup_is_proof_of_reversal": false,
+  "construction_rpc_calls": 0,
+  "wallet_rpc_calls": 0,
+  "transaction_submission_calls": 0,
+  "durable_owners_bytes_artifacts_attempts_unchanged": true,
+  "business_bindings_unchanged": true,
+  "tested_artifacts": {
+    "service_sha256": "fcc4ba5c61ee93655d6e74781cc1c2646011f43afcc937e5526c7d7fbd4636f6",
+    "verifier_sha256": "70113de6ee5fd50ee22f8f310e5fcaacb79e5f643c11635073dbf767062efc9f",
+    "core_cargo_lock_sha256": "8ed8d5c62e179400ff5f7d71c504094bce0cb95d79db620548f8d261058a59e6",
+    "verifier_cargo_lock_sha256": "22490b30ebc490f24340a8029ad454cba90dd48c0315b849c2ca8d78925d92e0",
+    "orchestrator_sha256": "0c2c7979d9f589a03fa401f2a54916aa46f035c87ac267b785f2b14a04a73f5a"
+  }
+}

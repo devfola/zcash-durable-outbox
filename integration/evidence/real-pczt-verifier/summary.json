@@ -1,0 +1,361 @@
+{
+  "real_fixture": true,
+  "wallet_operations_performed_by_runner": false,
+  "publication_enabled": false,
+  "live_adapter_qualified": false,
+  "helper_sha256": "70113de6ee5fd50ee22f8f310e5fcaacb79e5f643c11635073dbf767062efc9f",
+  "helper_lock_sha256": "22490b30ebc490f24340a8029ad454cba90dd48c0315b849c2ca8d78925d92e0",
+  "input_sha256": {
+    "created": "5a8ce276491ada0cc89e027a4bf0ede34c867f7ac178f9ba8d3120755a4ff6b4",
+    "proven": "38b52b03af1e990bccfde16a90646d534293e4e236b6d656f20f91ec0c5d29f5",
+    "signed": "a031d591035a9db122e8f0d12318666a1592ab8d02a328af02b2ca913840eb99"
+  },
+  "tip_height_supplied": 107,
+  "repeat_extraction_relation": {
+    "same_independent_consensus_txid": true,
+    "different_actual_raw_sha256": true,
+    "both_raw_responses_verified": true
+  },
+  "passed": true,
+  "cases": [
+    {
+      "case": "created-effects",
+      "expected_success": true,
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 0.218,
+      "report": {
+        "artifact_effects_verified": true,
+        "authorization_verified": false,
+        "chain_tip_source": "caller-supplied, not authenticated by helper",
+        "consensus_txid": null,
+        "cryptographic_authorization_verified": false,
+        "effects": {
+          "actions": 5,
+          "change_zat": 624860000,
+          "expiry_height": 148,
+          "fee_zat": 25000,
+          "memo_bytes_compared": 512,
+          "nonzero_change_outputs": 4,
+          "nonzero_inputs": 1,
+          "nonzero_payments": 1,
+          "payment_zat": 100000
+        },
+        "helper": "offline-disabled-artifact-verifier",
+        "live_adapter_qualified": false,
+        "mode": "effects-only",
+        "pczt_sha256": "5a8ce276491ada0cc89e027a4bf0ede34c867f7ac178f9ba8d3120755a4ff6b4",
+        "publication_enabled": false,
+        "raw_response_verified": false
+      }
+    },
+    {
+      "case": "proven-effects",
+      "expected_success": true,
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 0.203,
+      "report": {
+        "artifact_effects_verified": true,
+        "authorization_verified": false,
+        "chain_tip_source": "caller-supplied, not authenticated by helper",
+        "consensus_txid": null,
+        "cryptographic_authorization_verified": false,
+        "effects": {
+          "actions": 5,
+          "change_zat": 624860000,
+          "expiry_height": 148,
+          "fee_zat": 25000,
+          "memo_bytes_compared": 512,
+          "nonzero_change_outputs": 4,
+          "nonzero_inputs": 1,
+          "nonzero_payments": 1,
+          "payment_zat": 100000
+        },
+        "helper": "offline-disabled-artifact-verifier",
+        "live_adapter_qualified": false,
+        "mode": "effects-only",
+        "pczt_sha256": "38b52b03af1e990bccfde16a90646d534293e4e236b6d656f20f91ec0c5d29f5",
+        "publication_enabled": false,
+        "raw_response_verified": false
+      }
+    },
+    {
+      "case": "signed-effects",
+      "expected_success": true,
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 0.266,
+      "report": {
+        "artifact_effects_verified": true,
+        "authorization_verified": false,
+        "chain_tip_source": "caller-supplied, not authenticated by helper",
+        "consensus_txid": null,
+        "cryptographic_authorization_verified": false,
+        "effects": {
+          "actions": 5,
+          "change_zat": 624860000,
+          "expiry_height": 148,
+          "fee_zat": 25000,
+          "memo_bytes_compared": 512,
+          "nonzero_change_outputs": 4,
+          "nonzero_inputs": 1,
+          "nonzero_payments": 1,
+          "payment_zat": 100000
+        },
+        "helper": "offline-disabled-artifact-verifier",
+        "live_adapter_qualified": false,
+        "mode": "effects-only",
+        "pczt_sha256": "a031d591035a9db122e8f0d12318666a1592ab8d02a328af02b2ca913840eb99",
+        "publication_enabled": false,
+        "raw_response_verified": false
+      }
+    },
+    {
+      "case": "signed-original-raw",
+      "expected_success": true,
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 5.297,
+      "report": {
+        "artifact_effects_verified": true,
+        "authorization_verified": true,
+        "chain_tip_source": "caller-supplied, not authenticated by helper",
+        "consensus_txid": "340ffa32bea903483a0ff40bb166df482be26417960e4cad9cdcb5b60e461718",
+        "cryptographic_authorization_verified": true,
+        "effects": {
+          "actions": 5,
+          "change_zat": 624860000,
+          "expiry_height": 148,
+          "fee_zat": 25000,
+          "memo_bytes_compared": 512,
+          "nonzero_change_outputs": 4,
+          "nonzero_inputs": 1,
+          "nonzero_payments": 1,
+          "payment_zat": 100000
+        },
+        "helper": "offline-disabled-artifact-verifier",
+        "live_adapter_qualified": false,
+        "pczt_sha256": "a031d591035a9db122e8f0d12318666a1592ab8d02a328af02b2ca913840eb99",
+        "profile": "regtest-NU6.3-V6-Ironwood-up-to-8-actions-1-recipient",
+        "publication_enabled": false,
+        "raw_response_verified": true,
+        "raw_sha256": "a09a9118aa24baa38d226985d892fe4ed0cbb0506c7da6f41b9e2cace284b0d2"
+      }
+    },
+    {
+      "case": "signed-repeated-extraction-raw",
+      "expected_success": true,
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 6.437,
+      "report": {
+        "artifact_effects_verified": true,
+        "authorization_verified": true,
+        "chain_tip_source": "caller-supplied, not authenticated by helper",
+        "consensus_txid": "340ffa32bea903483a0ff40bb166df482be26417960e4cad9cdcb5b60e461718",
+        "cryptographic_authorization_verified": true,
+        "effects": {
+          "actions": 5,
+          "change_zat": 624860000,
+          "expiry_height": 148,
+          "fee_zat": 25000,
+          "memo_bytes_compared": 512,
+          "nonzero_change_outputs": 4,
+          "nonzero_inputs": 1,
+          "nonzero_payments": 1,
+          "payment_zat": 100000
+        },
+        "helper": "offline-disabled-artifact-verifier",
+        "live_adapter_qualified": false,
+        "pczt_sha256": "a031d591035a9db122e8f0d12318666a1592ab8d02a328af02b2ca913840eb99",
+        "profile": "regtest-NU6.3-V6-Ironwood-up-to-8-actions-1-recipient",
+        "publication_enabled": false,
+        "raw_response_verified": true,
+        "raw_sha256": "28ce05ea2fc9061d080f2c009b9dac06c3157f6d8f6e3470a7fd77dfb26c19b4"
+      }
+    },
+    {
+      "case": "changed-recipient",
+      "expected_success": false,
+      "exit_code": 2,
+      "passed": true,
+      "elapsed_seconds": 0.281,
+      "report": {
+        "artifact_effects_verified": false,
+        "authorization_verified": false,
+        "error": "unapproved positive output",
+        "live_adapter_qualified": false,
+        "publication_enabled": false
+      }
+    },
+    {
+      "case": "changed-amount",
+      "expected_success": false,
+      "exit_code": 2,
+      "passed": true,
+      "elapsed_seconds": 0.297,
+      "report": {
+        "artifact_effects_verified": false,
+        "authorization_verified": false,
+        "error": "payment amount mismatch",
+        "live_adapter_qualified": false,
+        "publication_enabled": false
+      }
+    },
+    {
+      "case": "changed-memo",
+      "expected_success": false,
+      "exit_code": 2,
+      "passed": true,
+      "elapsed_seconds": 0.438,
+      "report": {
+        "artifact_effects_verified": false,
+        "authorization_verified": false,
+        "error": "payment memo mismatch",
+        "live_adapter_qualified": false,
+        "publication_enabled": false
+      }
+    },
+    {
+      "case": "no-memo-is-not-user-memo",
+      "expected_success": false,
+      "exit_code": 2,
+      "passed": true,
+      "elapsed_seconds": 0.328,
+      "report": {
+        "artifact_effects_verified": false,
+        "authorization_verified": false,
+        "error": "payment memo mismatch",
+        "live_adapter_qualified": false,
+        "publication_enabled": false
+      }
+    },
+    {
+      "case": "fee-cap-too-low",
+      "expected_success": false,
+      "exit_code": 2,
+      "passed": true,
+      "elapsed_seconds": 0.313,
+      "report": {
+        "artifact_effects_verified": false,
+        "authorization_verified": false,
+        "error": "fee violates exact ZIP317 or approved cap",
+        "live_adapter_qualified": false,
+        "publication_enabled": false
+      }
+    },
+    {
+      "case": "changed-fee-policy",
+      "expected_success": false,
+      "exit_code": 2,
+      "passed": true,
+      "elapsed_seconds": 0.172,
+      "report": {
+        "artifact_effects_verified": false,
+        "authorization_verified": false,
+        "error": "unsupported intent policies",
+        "live_adapter_qualified": false,
+        "publication_enabled": false
+      }
+    },
+    {
+      "case": "changed-privacy",
+      "expected_success": false,
+      "exit_code": 2,
+      "passed": true,
+      "elapsed_seconds": 0.156,
+      "report": {
+        "artifact_effects_verified": false,
+        "authorization_verified": false,
+        "error": "unsupported intent policies",
+        "live_adapter_qualified": false,
+        "publication_enabled": false
+      }
+    },
+    {
+      "case": "changed-expiry",
+      "expected_success": false,
+      "exit_code": 2,
+      "passed": true,
+      "elapsed_seconds": 0.281,
+      "report": {
+        "artifact_effects_verified": false,
+        "authorization_verified": false,
+        "error": "PCZT expiry outside approved interval",
+        "live_adapter_qualified": false,
+        "publication_enabled": false
+      }
+    },
+    {
+      "case": "changed-account",
+      "expected_success": false,
+      "exit_code": 2,
+      "passed": true,
+      "elapsed_seconds": 0.172,
+      "report": {
+        "artifact_effects_verified": false,
+        "authorization_verified": false,
+        "error": "intent wallet/account differs from trusted bootstrap",
+        "live_adapter_qualified": false,
+        "publication_enabled": false
+      }
+    },
+    {
+      "case": "expiry-at-next-block",
+      "expected_success": false,
+      "exit_code": 2,
+      "passed": true,
+      "elapsed_seconds": 0.234,
+      "report": {
+        "artifact_effects_verified": false,
+        "authorization_verified": false,
+        "error": "PCZT expiry may be reached at next mining height",
+        "live_adapter_qualified": false,
+        "publication_enabled": false
+      }
+    },
+    {
+      "case": "unsigned-rejects-completed-mode",
+      "expected_success": false,
+      "exit_code": 2,
+      "passed": true,
+      "elapsed_seconds": 4.625,
+      "report": {
+        "artifact_effects_verified": false,
+        "authorization_verified": false,
+        "error": "independent PCZT proof/authorization extraction failed: Ironwood(Extract(MissingSpendAuthSig))",
+        "live_adapter_qualified": false,
+        "publication_enabled": false
+      }
+    },
+    {
+      "case": "reject-raw-trailing-byte",
+      "expected_success": false,
+      "exit_code": 2,
+      "passed": true,
+      "elapsed_seconds": 3.484,
+      "report": {
+        "artifact_effects_verified": false,
+        "authorization_verified": false,
+        "error": "raw transaction has trailing bytes",
+        "live_adapter_qualified": false,
+        "publication_enabled": false
+      }
+    },
+    {
+      "case": "reject-raw-binding-signature",
+      "expected_success": false,
+      "exit_code": 2,
+      "passed": true,
+      "elapsed_seconds": 4.0,
+      "report": {
+        "artifact_effects_verified": false,
+        "authorization_verified": false,
+        "error": "actual proof/spend/binding signature validation failed",
+        "live_adapter_qualified": false,
+        "publication_enabled": false
+      }
+    }
+  ]
+}

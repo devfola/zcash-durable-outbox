@@ -1,0 +1,13 @@
+test_new_directory_consensus_parity_and_no_wallet_broadcast (test_infrastructure.ConfigTests.test_new_directory_consensus_parity_and_no_wallet_broadcast) ... ok
+test_concurrent_calls_consume_one_drop (test_infrastructure.ProxyTests.test_concurrent_calls_consume_one_drop) ... ok
+test_drop_after_actual_upstream_action_then_pass_identical_retry (test_infrastructure.ProxyTests.test_drop_after_actual_upstream_action_then_pass_identical_retry) ... ok
+test_reject_nonloopback (test_infrastructure.ProxyTests.test_reject_nonloopback) ... ok
+test_release_handshake_rejects_existing_file_and_excess_timeout (test_infrastructure.ProxyTests.test_release_handshake_rejects_existing_file_and_excess_timeout) ... ok
+test_release_handshake_retains_completed_response_after_caller_death (test_infrastructure.ProxyTests.test_release_handshake_retains_completed_response_after_caller_death) ... ok
+test_release_timeout_drops_without_delivering_or_repeating_upstream (test_infrastructure.ProxyTests.test_release_timeout_drops_without_delivering_or_repeating_upstream) ... ok
+test_remote_completes_after_caller_socket_dies (test_infrastructure.ProxyTests.test_remote_completes_after_caller_socket_dies) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 6.879s
+
+OK

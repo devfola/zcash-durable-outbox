@@ -1,0 +1,736 @@
+{
+  "primary": {
+    "artifacts": [
+      {
+        "bytes": 5075,
+        "digest": "243576724121764dfd68a2afc50adc4e4dae52daba036bf58076a959dcf32cf6",
+        "payment": "bounty:real-stack-award",
+        "stage": "created"
+      },
+      {
+        "bytes": 9166,
+        "digest": "c047ed72982034dae3986cc2c5f50182ffbc11a20edf86fb9e2d29695b334580",
+        "payment": "bounty:real-stack-award",
+        "stage": "extracted"
+      },
+      {
+        "bytes": 12341,
+        "digest": "117c7358ad5f6c902576e33f0c53ed58c528493e4cc13f67b909ffca590affcb",
+        "payment": "bounty:real-stack-award",
+        "stage": "proven"
+      },
+      {
+        "bytes": 12405,
+        "digest": "121a9249f086525fed447b1cb78b8f300993131c7860ae0f179dc6dbee47d8dd",
+        "payment": "bounty:real-stack-award",
+        "stage": "signed"
+      },
+      {
+        "bytes": 5075,
+        "digest": "6389f210e0904031c728e4dbb6da199d51cccf2df55b27159ea62fca2c400988",
+        "payment": "node-acceptance-response-lost",
+        "stage": "created"
+      },
+      {
+        "bytes": 9166,
+        "digest": "c4ab730d0337b3fe2c5a273ea19a4d84e84907824ba0ddc26c07395903f8750f",
+        "payment": "node-acceptance-response-lost",
+        "stage": "extracted"
+      },
+      {
+        "bytes": 12341,
+        "digest": "d60d58095aa02d05625e5e4a40465c0d97abb7ef10a2fb51931aece1aaec1190",
+        "payment": "node-acceptance-response-lost",
+        "stage": "proven"
+      },
+      {
+        "bytes": 12405,
+        "digest": "1df77c78767d012f9cfd462e90c2d6bbadfa1136994c354f2c95b4ed89a6fb0c",
+        "payment": "node-acceptance-response-lost",
+        "stage": "signed"
+      },
+      {
+        "bytes": 12091,
+        "digest": "f539ff062d3c7336c5ac5369223861d4fffff9c7c67e2a9a30a64fb973b41ffe",
+        "payment": "ordinary-001",
+        "stage": "created"
+      },
+      {
+        "bytes": 18634,
+        "digest": "144e3ebb9f26187431ebc054019c7916f40c7bef38e762bcd7b7ecbf0946e96d",
+        "payment": "ordinary-001",
+        "stage": "extracted"
+      },
+      {
+        "bytes": 26173,
+        "digest": "e9afa85a89252eecfc14a13951b2d7402624a0fc37dda8469485debf84bcd3b4",
+        "payment": "ordinary-001",
+        "stage": "proven"
+      },
+      {
+        "bytes": 26237,
+        "digest": "f781a24fe38f9c76af2e9b25fca9bca8cde77a8d51ca537519d2b02dd16c5090",
+        "payment": "ordinary-001",
+        "stage": "signed"
+      },
+      {
+        "bytes": 7413,
+        "digest": "fc2f7082b3e23ee3e08271e3668a79d31cdd00941e513190260c515884e6f33c",
+        "payment": "refund:real-stack-purchase",
+        "stage": "created"
+      },
+      {
+        "bytes": 12322,
+        "digest": "c700d940518d801418daa41efa8b73d19c4d4252abd76a3ce098806a1da783f1",
+        "payment": "refund:real-stack-purchase",
+        "stage": "extracted"
+      },
+      {
+        "bytes": 16951,
+        "digest": "9a458bafee9d653292e069dd8afe13b324be1663b3498e1db1836b52c38c11ae",
+        "payment": "refund:real-stack-purchase",
+        "stage": "proven"
+      },
+      {
+        "bytes": 17015,
+        "digest": "a770fae1b61786c65acf119ea1c98055454aba38fcb5ff1ad8a6f3e0b600227b",
+        "payment": "refund:real-stack-purchase",
+        "stage": "signed"
+      },
+      {
+        "bytes": 5075,
+        "digest": "0edfd1ab437cf35a3abc058da2e05514b657c08ec1f4b0dc5fa0fc0508f1a285",
+        "payment": "same-id-concurrent",
+        "stage": "created"
+      },
+      {
+        "bytes": 9166,
+        "digest": "033f52c93e2d5634b82c2fa1277dfe735f643c0f300f796bd733b2302cb5ea72",
+        "payment": "same-id-concurrent",
+        "stage": "extracted"
+      },
+      {
+        "bytes": 12341,
+        "digest": "876ee331ae960b73690a69cdf0bd168185930b0295da665a8ec2a285f2b381a7",
+        "payment": "same-id-concurrent",
+        "stage": "proven"
+      },
+      {
+        "bytes": 12405,
+        "digest": "49741b82e027c919616ca7e0e0c82cb3ff8549c860360f098d4927046562dfb3",
+        "payment": "same-id-concurrent",
+        "stage": "signed"
+      },
+      {
+        "bytes": 5075,
+        "digest": "30fba9369b6793a8976572c8fc528bdd2ffcf5c8ae37790ecd70dee1a7c2ef33",
+        "payment": "terminal-extraction-response-loss",
+        "stage": "created"
+      },
+      {
+        "bytes": 12341,
+        "digest": "bbd8ad5b891d79ba39d4ef870f3500d9675ce7bef4bdea6aed902c7dcfad3ad4",
+        "payment": "terminal-extraction-response-loss",
+        "stage": "proven"
+      },
+      {
+        "bytes": 12405,
+        "digest": "685da05af8c5413ff28fad075f5dd66f63b169918230f51d5ccb0ea337c36118",
+        "payment": "terminal-extraction-response-loss",
+        "stage": "signed"
+      }
+    ],
+    "attempts": [
+      {
+        "byte_digest": "144e3ebb9f26187431ebc054019c7916f40c7bef38e762bcd7b7ecbf0946e96d",
+        "created_at": "2026-10-20T05:12:47.127Z",
+        "detail": "fc01dbeee8722c59948045c66b6dce2ec0e4dc2aff53b4ce8a88535b689e2560",
+        "id": 1,
+        "outcome": "accepted",
+        "payment": "ordinary-001"
+      },
+      {
+        "byte_digest": "033f52c93e2d5634b82c2fa1277dfe735f643c0f300f796bd733b2302cb5ea72",
+        "created_at": "2026-10-20T05:13:01.537Z",
+        "detail": "1f783b38157d17bba1d79c032b828e8241011f4118b0c79ace64eb213b41647d",
+        "id": 2,
+        "outcome": "accepted",
+        "payment": "same-id-concurrent"
+      },
+      {
+        "byte_digest": "c047ed72982034dae3986cc2c5f50182ffbc11a20edf86fb9e2d29695b334580",
+        "created_at": "2026-10-20T05:13:15.861Z",
+        "detail": "502ca67a9802a4491c373bf645040866b3861751caf5d7f750f3785575c8ad05",
+        "id": 3,
+        "outcome": "accepted",
+        "payment": "bounty:real-stack-award"
+      },
+      {
+        "byte_digest": "c700d940518d801418daa41efa8b73d19c4d4252abd76a3ce098806a1da783f1",
+        "created_at": "2026-10-20T05:13:28.334Z",
+        "detail": "408f0353e6e53748ab86027c0d9c64d818b05dd721ef17d3b3f4b8ca3855d6dc",
+        "id": 4,
+        "outcome": "accepted",
+        "payment": "refund:real-stack-purchase"
+      },
+      {
+        "byte_digest": "c4ab730d0337b3fe2c5a273ea19a4d84e84907824ba0ddc26c07395903f8750f",
+        "created_at": "2026-10-20T05:13:45.453Z",
+        "detail": null,
+        "id": 5,
+        "outcome": "inflight",
+        "payment": "node-acceptance-response-lost"
+      },
+      {
+        "byte_digest": "c4ab730d0337b3fe2c5a273ea19a4d84e84907824ba0ddc26c07395903f8750f",
+        "created_at": "2026-10-20T05:13:46.284Z",
+        "detail": "07720b2a62797c7fa32bc0d4918500333f1d88ddc84cb0e775bd6dac4382d8a5",
+        "id": 6,
+        "outcome": "accepted",
+        "payment": "node-acceptance-response-lost"
+      }
+    ],
+    "non_observation_events": [
+      {
+        "created_at": "2026-10-20T05:12:25.617Z",
+        "detail": "create",
+        "id": 1,
+        "kind": "stage_started",
+        "payment": "ordinary-001"
+      },
+      {
+        "created_at": "2026-10-20T05:12:26.289Z",
+        "detail": "create",
+        "id": 2,
+        "kind": "stage_completed",
+        "payment": "ordinary-001"
+      },
+      {
+        "created_at": "2026-10-20T05:12:26.678Z",
+        "detail": "prove",
+        "id": 3,
+        "kind": "stage_started",
+        "payment": "ordinary-001"
+      },
+      {
+        "created_at": "2026-10-20T05:12:38.513Z",
+        "detail": "prove",
+        "id": 4,
+        "kind": "stage_completed",
+        "payment": "ordinary-001"
+      },
+      {
+        "created_at": "2026-10-20T05:12:38.943Z",
+        "detail": "sign",
+        "id": 5,
+        "kind": "stage_started",
+        "payment": "ordinary-001"
+      },
+      {
+        "created_at": "2026-10-20T05:12:39.772Z",
+        "detail": "sign",
+        "id": 6,
+        "kind": "stage_completed",
+        "payment": "ordinary-001"
+      },
+      {
+        "created_at": "2026-10-20T05:12:40.198Z",
+        "detail": "extract",
+        "id": 7,
+        "kind": "stage_started",
+        "payment": "ordinary-001"
+      },
+      {
+        "created_at": "2026-10-20T05:12:47.038Z",
+        "detail": "fc01dbeee8722c59948045c66b6dce2ec0e4dc2aff53b4ce8a88535b689e2560",
+        "id": 8,
+        "kind": "final_bytes_committed",
+        "payment": "ordinary-001"
+      },
+      {
+        "created_at": "2026-10-20T05:12:50.310Z",
+        "detail": "create",
+        "id": 10,
+        "kind": "stage_started",
+        "payment": "same-id-concurrent"
+      },
+      {
+        "created_at": "2026-10-20T05:12:51.658Z",
+        "detail": "create",
+        "id": 11,
+        "kind": "stage_completed",
+        "payment": "same-id-concurrent"
+      },
+      {
+        "created_at": "2026-10-20T05:12:52.074Z",
+        "detail": "prove",
+        "id": 12,
+        "kind": "stage_started",
+        "payment": "same-id-concurrent"
+      },
+      {
+        "created_at": "2026-10-20T05:12:55.909Z",
+        "detail": "prove",
+        "id": 13,
+        "kind": "stage_completed",
+        "payment": "same-id-concurrent"
+      },
+      {
+        "created_at": "2026-10-20T05:12:56.322Z",
+        "detail": "sign",
+        "id": 14,
+        "kind": "stage_started",
+        "payment": "same-id-concurrent"
+      },
+      {
+        "created_at": "2026-10-20T05:12:57.100Z",
+        "detail": "sign",
+        "id": 15,
+        "kind": "stage_completed",
+        "payment": "same-id-concurrent"
+      },
+      {
+        "created_at": "2026-10-20T05:12:57.460Z",
+        "detail": "extract",
+        "id": 16,
+        "kind": "stage_started",
+        "payment": "same-id-concurrent"
+      },
+      {
+        "created_at": "2026-10-20T05:13:01.470Z",
+        "detail": "1f783b38157d17bba1d79c032b828e8241011f4118b0c79ace64eb213b41647d",
+        "id": 17,
+        "kind": "final_bytes_committed",
+        "payment": "same-id-concurrent"
+      },
+      {
+        "created_at": "2026-10-20T05:13:05.036Z",
+        "detail": "create",
+        "id": 19,
+        "kind": "stage_started",
+        "payment": "bounty:real-stack-award"
+      },
+      {
+        "created_at": "2026-10-20T05:13:05.909Z",
+        "detail": "create",
+        "id": 20,
+        "kind": "stage_completed",
+        "payment": "bounty:real-stack-award"
+      },
+      {
+        "created_at": "2026-10-20T05:13:06.283Z",
+        "detail": "prove",
+        "id": 21,
+        "kind": "stage_started",
+        "payment": "bounty:real-stack-award"
+      },
+      {
+        "created_at": "2026-10-20T05:13:10.082Z",
+        "detail": "prove",
+        "id": 22,
+        "kind": "stage_completed",
+        "payment": "bounty:real-stack-award"
+      },
+      {
+        "created_at": "2026-10-20T05:13:10.628Z",
+        "detail": "sign",
+        "id": 23,
+        "kind": "stage_started",
+        "payment": "bounty:real-stack-award"
+      },
+      {
+        "created_at": "2026-10-20T05:13:11.569Z",
+        "detail": "sign",
+        "id": 24,
+        "kind": "stage_completed",
+        "payment": "bounty:real-stack-award"
+      },
+      {
+        "created_at": "2026-10-20T05:13:12.019Z",
+        "detail": "extract",
+        "id": 25,
+        "kind": "stage_started",
+        "payment": "bounty:real-stack-award"
+      },
+      {
+        "created_at": "2026-10-20T05:13:15.786Z",
+        "detail": "502ca67a9802a4491c373bf645040866b3861751caf5d7f750f3785575c8ad05",
+        "id": 26,
+        "kind": "final_bytes_committed",
+        "payment": "bounty:real-stack-award"
+      },
+      {
+        "created_at": "2026-10-20T05:13:16.523Z",
+        "detail": "create",
+        "id": 27,
+        "kind": "stage_started",
+        "payment": "refund:real-stack-purchase"
+      },
+      {
+        "created_at": "2026-10-20T05:13:17.155Z",
+        "detail": "create",
+        "id": 28,
+        "kind": "stage_completed",
+        "payment": "refund:real-stack-purchase"
+      },
+      {
+        "created_at": "2026-10-20T05:13:17.543Z",
+        "detail": "prove",
+        "id": 29,
+        "kind": "stage_started",
+        "payment": "refund:real-stack-purchase"
+      },
+      {
+        "created_at": "2026-10-20T05:13:23.114Z",
+        "detail": "prove",
+        "id": 30,
+        "kind": "stage_completed",
+        "payment": "refund:real-stack-purchase"
+      },
+      {
+        "created_at": "2026-10-20T05:13:23.530Z",
+        "detail": "sign",
+        "id": 31,
+        "kind": "stage_started",
+        "payment": "refund:real-stack-purchase"
+      },
+      {
+        "created_at": "2026-10-20T05:13:24.332Z",
+        "detail": "sign",
+        "id": 32,
+        "kind": "stage_completed",
+        "payment": "refund:real-stack-purchase"
+      },
+      {
+        "created_at": "2026-10-20T05:13:24.712Z",
+        "detail": "extract",
+        "id": 33,
+        "kind": "stage_started",
+        "payment": "refund:real-stack-purchase"
+      },
+      {
+        "created_at": "2026-10-20T05:13:28.246Z",
+        "detail": "408f0353e6e53748ab86027c0d9c64d818b05dd721ef17d3b3f4b8ca3855d6dc",
+        "id": 34,
+        "kind": "final_bytes_committed",
+        "payment": "refund:real-stack-purchase"
+      },
+      {
+        "created_at": "2026-10-20T05:13:34.458Z",
+        "detail": "create",
+        "id": 39,
+        "kind": "stage_started",
+        "payment": "node-acceptance-response-lost"
+      },
+      {
+        "created_at": "2026-10-20T05:13:35.023Z",
+        "detail": "create",
+        "id": 40,
+        "kind": "stage_completed",
+        "payment": "node-acceptance-response-lost"
+      },
+      {
+        "created_at": "2026-10-20T05:13:35.402Z",
+        "detail": "prove",
+        "id": 41,
+        "kind": "stage_started",
+        "payment": "node-acceptance-response-lost"
+      },
+      {
+        "created_at": "2026-10-20T05:13:39.443Z",
+        "detail": "prove",
+        "id": 42,
+        "kind": "stage_completed",
+        "payment": "node-acceptance-response-lost"
+      },
+      {
+        "created_at": "2026-10-20T05:13:39.916Z",
+        "detail": "sign",
+        "id": 43,
+        "kind": "stage_started",
+        "payment": "node-acceptance-response-lost"
+      },
+      {
+        "created_at": "2026-10-20T05:13:40.783Z",
+        "detail": "sign",
+        "id": 44,
+        "kind": "stage_completed",
+        "payment": "node-acceptance-response-lost"
+      },
+      {
+        "created_at": "2026-10-20T05:13:41.161Z",
+        "detail": "extract",
+        "id": 45,
+        "kind": "stage_started",
+        "payment": "node-acceptance-response-lost"
+      },
+      {
+        "created_at": "2026-10-20T05:13:45.377Z",
+        "detail": "07720b2a62797c7fa32bc0d4918500333f1d88ddc84cb0e775bd6dac4382d8a5",
+        "id": 46,
+        "kind": "final_bytes_committed",
+        "payment": "node-acceptance-response-lost"
+      },
+      {
+        "created_at": "2026-10-20T05:13:50.892Z",
+        "detail": "create",
+        "id": 48,
+        "kind": "stage_started",
+        "payment": "terminal-extraction-response-loss"
+      },
+      {
+        "created_at": "2026-10-20T05:13:51.479Z",
+        "detail": "create",
+        "id": 49,
+        "kind": "stage_completed",
+        "payment": "terminal-extraction-response-loss"
+      },
+      {
+        "created_at": "2026-10-20T05:13:51.838Z",
+        "detail": "prove",
+        "id": 50,
+        "kind": "stage_started",
+        "payment": "terminal-extraction-response-loss"
+      },
+      {
+        "created_at": "2026-10-20T05:13:57.493Z",
+        "detail": "prove",
+        "id": 51,
+        "kind": "stage_completed",
+        "payment": "terminal-extraction-response-loss"
+      },
+      {
+        "created_at": "2026-10-20T05:13:57.923Z",
+        "detail": "sign",
+        "id": 52,
+        "kind": "stage_started",
+        "payment": "terminal-extraction-response-loss"
+      },
+      {
+        "created_at": "2026-10-20T05:13:58.751Z",
+        "detail": "sign",
+        "id": 53,
+        "kind": "stage_completed",
+        "payment": "terminal-extraction-response-loss"
+      },
+      {
+        "created_at": "2026-10-20T05:13:59.171Z",
+        "detail": "extract",
+        "id": 54,
+        "kind": "stage_started",
+        "payment": "terminal-extraction-response-loss"
+      }
+    ],
+    "payments": [
+      {
+        "byte_digest": null,
+        "id": "blocked-by-quarantine",
+        "inflight": null,
+        "intent_digest": "19b589609b640255da6bee958ebe41c7161e79b5f7f84fece08cc53f34b404ee",
+        "intent_json_sha256": "19b589609b640255da6bee958ebe41c7161e79b5f7f84fece08cc53f34b404ee",
+        "last_error": null,
+        "owner": null,
+        "raw_present": false,
+        "raw_sha256": null,
+        "raw_size": null,
+        "stage": "pending",
+        "txid": null
+      },
+      {
+        "byte_digest": "c047ed72982034dae3986cc2c5f50182ffbc11a20edf86fb9e2d29695b334580",
+        "id": "bounty:real-stack-award",
+        "inflight": null,
+        "intent_digest": "c348867f90fa818592398663a2bf54cd7e58e69491f5fd507b82f767b761b78e",
+        "intent_json_sha256": "c348867f90fa818592398663a2bf54cd7e58e69491f5fd507b82f767b761b78e",
+        "last_error": null,
+        "owner": "d7d03a1f-741b-4512-a1d8-057334f36328",
+        "raw_present": true,
+        "raw_sha256": "c047ed72982034dae3986cc2c5f50182ffbc11a20edf86fb9e2d29695b334580",
+        "raw_size": 9166,
+        "stage": "accepted",
+        "txid": "502ca67a9802a4491c373bf645040866b3861751caf5d7f750f3785575c8ad05"
+      },
+      {
+        "byte_digest": "c4ab730d0337b3fe2c5a273ea19a4d84e84907824ba0ddc26c07395903f8750f",
+        "id": "node-acceptance-response-lost",
+        "inflight": null,
+        "intent_digest": "b53ee177d926d9888dc1caa410d1071489e3d0a6691d0175a91f18b7c82d3526",
+        "intent_json_sha256": "b53ee177d926d9888dc1caa410d1071489e3d0a6691d0175a91f18b7c82d3526",
+        "last_error": null,
+        "owner": "3472bb8c-81cb-4540-bef2-1a16973329cb",
+        "raw_present": true,
+        "raw_sha256": "c4ab730d0337b3fe2c5a273ea19a4d84e84907824ba0ddc26c07395903f8750f",
+        "raw_size": 9166,
+        "stage": "accepted",
+        "txid": "07720b2a62797c7fa32bc0d4918500333f1d88ddc84cb0e775bd6dac4382d8a5"
+      },
+      {
+        "byte_digest": "144e3ebb9f26187431ebc054019c7916f40c7bef38e762bcd7b7ecbf0946e96d",
+        "id": "ordinary-001",
+        "inflight": null,
+        "intent_digest": "797829ecf923d32ced3d5e9b6620f681862f9fcfbff3c38cceb30532059c0753",
+        "intent_json_sha256": "797829ecf923d32ced3d5e9b6620f681862f9fcfbff3c38cceb30532059c0753",
+        "last_error": null,
+        "owner": "4417a778-342a-4f8d-960a-c193b75dbf0e",
+        "raw_present": true,
+        "raw_sha256": "144e3ebb9f26187431ebc054019c7916f40c7bef38e762bcd7b7ecbf0946e96d",
+        "raw_size": 18634,
+        "stage": "accepted",
+        "txid": "fc01dbeee8722c59948045c66b6dce2ec0e4dc2aff53b4ce8a88535b689e2560"
+      },
+      {
+        "byte_digest": "c700d940518d801418daa41efa8b73d19c4d4252abd76a3ce098806a1da783f1",
+        "id": "refund:real-stack-purchase",
+        "inflight": null,
+        "intent_digest": "c348867f90fa818592398663a2bf54cd7e58e69491f5fd507b82f767b761b78e",
+        "intent_json_sha256": "c348867f90fa818592398663a2bf54cd7e58e69491f5fd507b82f767b761b78e",
+        "last_error": null,
+        "owner": "944fbaa2-d8ef-41eb-87a4-bf2f1b0458e6",
+        "raw_present": true,
+        "raw_sha256": "c700d940518d801418daa41efa8b73d19c4d4252abd76a3ce098806a1da783f1",
+        "raw_size": 12322,
+        "stage": "accepted",
+        "txid": "408f0353e6e53748ab86027c0d9c64d818b05dd721ef17d3b3f4b8ca3855d6dc"
+      },
+      {
+        "byte_digest": "033f52c93e2d5634b82c2fa1277dfe735f643c0f300f796bd733b2302cb5ea72",
+        "id": "same-id-concurrent",
+        "inflight": null,
+        "intent_digest": "b13d44512b59aef3dec9fa2acf1c777831c9b282673c6273ac480ff3caad25d2",
+        "intent_json_sha256": "b13d44512b59aef3dec9fa2acf1c777831c9b282673c6273ac480ff3caad25d2",
+        "last_error": null,
+        "owner": "373462fd-3b44-4081-8255-e6c389e25681",
+        "raw_present": true,
+        "raw_sha256": "033f52c93e2d5634b82c2fa1277dfe735f643c0f300f796bd733b2302cb5ea72",
+        "raw_size": 9166,
+        "stage": "accepted",
+        "txid": "1f783b38157d17bba1d79c032b828e8241011f4118b0c79ace64eb213b41647d"
+      },
+      {
+        "byte_digest": null,
+        "id": "terminal-extraction-response-loss",
+        "inflight": "extract",
+        "intent_digest": "19b589609b640255da6bee958ebe41c7161e79b5f7f84fece08cc53f34b404ee",
+        "intent_json_sha256": "19b589609b640255da6bee958ebe41c7161e79b5f7f84fece08cc53f34b404ee",
+        "last_error": null,
+        "owner": "44eae166-bd58-47d9-9f47-b19985449ba1",
+        "raw_present": false,
+        "raw_sha256": null,
+        "raw_size": null,
+        "stage": "signed",
+        "txid": null
+      }
+    ],
+    "wallet": {
+      "account": "83c2488c-fe1f-43f6-b4e7-b73221cfa1e6",
+      "id": 1,
+      "name": "disposable-sender",
+      "network": "regtest",
+      "payment": "terminal-extraction-response-loss"
+    }
+  },
+  "secondary": {
+    "artifacts": [
+      {
+        "bytes": 5108,
+        "digest": "5eec3e623ddaa5c9ae19350217efdb3f95a87327f64a3bf8720cbe33c2b40d63",
+        "payment": "terminal-sqlite-commit-rejection",
+        "stage": "created"
+      },
+      {
+        "bytes": 12374,
+        "digest": "f4f3a7cab2928b831b98ab1efb02597f08c134fa23b4ce50d0253a3ed21cfc7b",
+        "payment": "terminal-sqlite-commit-rejection",
+        "stage": "proven"
+      },
+      {
+        "bytes": 12438,
+        "digest": "fdb4eed947164c859221b0e9e55d545a02519ddc127ffe898444ea909ed09984",
+        "payment": "terminal-sqlite-commit-rejection",
+        "stage": "signed"
+      }
+    ],
+    "attempts": [],
+    "non_observation_events": [
+      {
+        "created_at": "2026-10-20T05:14:01.888Z",
+        "detail": "create",
+        "id": 1,
+        "kind": "stage_started",
+        "payment": "terminal-sqlite-commit-rejection"
+      },
+      {
+        "created_at": "2026-10-20T05:14:02.554Z",
+        "detail": "create",
+        "id": 2,
+        "kind": "stage_completed",
+        "payment": "terminal-sqlite-commit-rejection"
+      },
+      {
+        "created_at": "2026-10-20T05:14:02.893Z",
+        "detail": "prove",
+        "id": 3,
+        "kind": "stage_started",
+        "payment": "terminal-sqlite-commit-rejection"
+      },
+      {
+        "created_at": "2026-10-20T05:14:11.175Z",
+        "detail": "prove",
+        "id": 4,
+        "kind": "stage_completed",
+        "payment": "terminal-sqlite-commit-rejection"
+      },
+      {
+        "created_at": "2026-10-20T05:14:11.627Z",
+        "detail": "sign",
+        "id": 5,
+        "kind": "stage_started",
+        "payment": "terminal-sqlite-commit-rejection"
+      },
+      {
+        "created_at": "2026-10-20T05:14:12.475Z",
+        "detail": "sign",
+        "id": 6,
+        "kind": "stage_completed",
+        "payment": "terminal-sqlite-commit-rejection"
+      },
+      {
+        "created_at": "2026-10-20T05:14:12.955Z",
+        "detail": "extract",
+        "id": 7,
+        "kind": "stage_started",
+        "payment": "terminal-sqlite-commit-rejection"
+      },
+      {
+        "created_at": "2026-10-20T05:14:22.139Z",
+        "detail": "FOREIGN KEY constraint failed",
+        "id": 8,
+        "kind": "operation_uncertain",
+        "payment": "terminal-sqlite-commit-rejection"
+      }
+    ],
+    "payments": [
+      {
+        "byte_digest": null,
+        "id": "terminal-sqlite-commit-rejection",
+        "inflight": "extract",
+        "intent_digest": "c77fef810695a6cae09ce7624be5376d3ecdadee05d3b22e83db1a2200eecc5a",
+        "intent_json_sha256": "c77fef810695a6cae09ce7624be5376d3ecdadee05d3b22e83db1a2200eecc5a",
+        "last_error": "FOREIGN KEY constraint failed",
+        "owner": "6e71854b-43db-41f9-9694-20c140d6e14e",
+        "raw_present": false,
+        "raw_sha256": null,
+        "raw_size": null,
+        "stage": "signed",
+        "txid": null
+      }
+    ],
+    "wallet": {
+      "account": "5e0232c6-c5b5-4e65-8418-2c062606dfb6",
+      "id": 1,
+      "name": "disposable-receiver",
+      "network": "regtest",
+      "payment": "terminal-sqlite-commit-rejection"
+    }
+  }
+}

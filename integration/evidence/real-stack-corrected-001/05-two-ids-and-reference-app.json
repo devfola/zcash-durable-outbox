@@ -1,0 +1,74 @@
+{
+  "actual_service_restart": true,
+  "business_results": [
+    {
+      "operation": "query",
+      "paid": true,
+      "payment_id": "bounty:real-stack-award",
+      "txid": "c67a15409904539f459939ad382290407e4ebaceef6179144a761dc11444f3cd"
+    },
+    {
+      "operation": "pay",
+      "paid": true,
+      "payment_id": "bounty:real-stack-award",
+      "txid": "c67a15409904539f459939ad382290407e4ebaceef6179144a761dc11444f3cd"
+    },
+    {
+      "operation": "refresh",
+      "paid": true,
+      "payment_id": "bounty:real-stack-award",
+      "txid": "c67a15409904539f459939ad382290407e4ebaceef6179144a761dc11444f3cd"
+    },
+    {
+      "operation": "query",
+      "paid": true,
+      "payment_id": "refund:real-stack-purchase",
+      "txid": "864c2c493b286310aca4055ad3a0f5c333b8bc61312013fbe13445130e89a128"
+    },
+    {
+      "operation": "pay",
+      "paid": true,
+      "payment_id": "refund:real-stack-purchase",
+      "txid": "864c2c493b286310aca4055ad3a0f5c333b8bc61312013fbe13445130e89a128"
+    },
+    {
+      "operation": "refresh",
+      "paid": true,
+      "payment_id": "refund:real-stack-purchase",
+      "txid": "864c2c493b286310aca4055ad3a0f5c333b8bc61312013fbe13445130e89a128"
+    }
+  ],
+  "durable_business_ledger": true,
+  "observations": [
+    {
+      "chain_observation": {
+        "blockhash": "18a50ef19c6522b1820b53ea4237ede26eca737f0e2bf894d92f3ee87584d418",
+        "confirmations": 1,
+        "last_known_mined_block": "18a50ef19c6522b1820b53ea4237ede26eca737f0e2bf894d92f3ee87584d418",
+        "mining_reversed": false,
+        "prior_mining_no_longer_observed": false,
+        "required_confirmations": 1,
+        "state": "confirmed",
+        "tip_height": 112,
+        "txid": "c67a15409904539f459939ad382290407e4ebaceef6179144a761dc11444f3cd"
+      },
+      "memo_sha256": "07c65536892061bc609c9ea3bb65ff80b05f6e8fc56211bd6c25b7475c29d523",
+      "raw_sha256": "1c1b9b56efd99fe1dcbe4deea64ab286b58343833699109fbd388ce8ac1297c4",
+      "receiver_confirmations": 1,
+      "receiver_status": "mined",
+      "receiver_verified": true,
+      "txid": "c67a15409904539f459939ad382290407e4ebaceef6179144a761dc11444f3cd"
+    },
+    {
+      "raw_sha256": "d8434c1ad9a1f30fcd7765a071583a4759c6c3f1a6f1c869921d93ba43ca973c",
+      "receiver_confirmations": 1,
+      "receiver_status": "mined",
+      "receiver_verified": true,
+      "txid": "864c2c493b286310aca4055ad3a0f5c333b8bc61312013fbe13445130e89a128"
+    }
+  ],
+  "passed": true,
+  "real_wallet_and_node": true,
+  "scenario": "05-two-ids-and-reference-app",
+  "stages_serialized": true
+}

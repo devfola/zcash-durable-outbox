@@ -1,0 +1,13 @@
+{
+  "time": 1792473094.038888,
+  "fresh_funding_completed": true,
+  "old_root_retained": "/home/outbox/regtest",
+  "new_ready_file": "/home/outbox/final-run/regtest/ready.json",
+  "actual_registration_indices": {
+    "sender": 1,
+    "receiver": 4609798954
+  },
+  "wallet_broadcast": false,
+  "old_claims_untouched": true,
+  "independent_created_pczt_checks_required_before_prove_sign": true
+}

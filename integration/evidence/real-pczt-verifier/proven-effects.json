@@ -1,0 +1,31 @@
+{
+  "case": "proven-effects",
+  "expected_success": true,
+  "exit_code": 0,
+  "passed": true,
+  "elapsed_seconds": 0.203,
+  "report": {
+    "artifact_effects_verified": true,
+    "authorization_verified": false,
+    "chain_tip_source": "caller-supplied, not authenticated by helper",
+    "consensus_txid": null,
+    "cryptographic_authorization_verified": false,
+    "effects": {
+      "actions": 5,
+      "change_zat": 624860000,
+      "expiry_height": 148,
+      "fee_zat": 25000,
+      "memo_bytes_compared": 512,
+      "nonzero_change_outputs": 4,
+      "nonzero_inputs": 1,
+      "nonzero_payments": 1,
+      "payment_zat": 100000
+    },
+    "helper": "offline-disabled-artifact-verifier",
+    "live_adapter_qualified": false,
+    "mode": "effects-only",
+    "pczt_sha256": "38b52b03af1e990bccfde16a90646d534293e4e236b6d656f20f91ec0c5d29f5",
+    "publication_enabled": false,
+    "raw_response_verified": false
+  }
+}

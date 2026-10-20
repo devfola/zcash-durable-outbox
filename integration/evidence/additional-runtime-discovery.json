@@ -1,0 +1,18 @@
+[
+  {
+    "path": "C:\\Program Files\\Docker\\Docker\\resources\\bin\\docker.exe",
+    "exists": false
+  },
+  {
+    "path": "C:\\Program Files\\RedHat\\Podman\\podman.exe",
+    "exists": false
+  },
+  {
+    "path": "C:\\Program Files\\Oracle\\VirtualBox\\VBoxManage.exe",
+    "exists": false
+  },
+  {
+    "path": "C:\\Program Files\\qemu\\qemu-system-x86_64.exe",
+    "exists": false
+  }
+]

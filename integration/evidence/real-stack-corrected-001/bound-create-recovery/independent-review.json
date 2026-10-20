@@ -1,0 +1,72 @@
+{
+  "passed": true,
+  "scope": "Separate in-session read-only saved-artifact review; no RPC, cryptographic rerun, database reads or source edits.",
+  "genuine_CREATE_forwards": 2,
+  "pre_dispatch_binding_proofs_correlate_with_actual_proxy_calls": true,
+  "original_binding_request_response_and_created_PCZT_match": true,
+  "same_intent_distinct_original_operations": true,
+  "wrong_A_for_B_rejected_before_RPC": true,
+  "cross_rejection_state_unchanged": "Successful frozen-harness full logical-digest assertion; original before/after DB snapshots were not separately retained.",
+  "original_B_recovery_preserves_owner_and_binding": true,
+  "B_recovery_actual_verifier_report_matches_saved_PCZT": true,
+  "recovery_RPC_delta": {
+    "node": {
+      "getblockchaininfo": 1,
+      "getblockhash": 1
+    },
+    "wallet": {
+      "pczt_inspect": 1
+    }
+  },
+  "CREATE_replays": 0,
+  "both_actual_sign_prove_extract_chains_match_original_created_artifacts": true,
+  "both_saved_actual_final_verifier_reports_bind_raw_bytes_and_consensus_txids": true,
+  "receiver_mined_observations": "Both recorded status=mined, confirmations=1 and exact-output checks passed in the frozen harness; raw z_viewtransaction bodies were not separately retained.",
+  "normal_wallet_release": "Completed-case assertion reviewed; active wallet slot was not queried while later scenarios run.",
+  "current_executables_core_harness_and_source_manifests_match": true,
+  "root_orchestrator_difference_is_expected": true,
+  "service_sha256": "1bfe1868435b39329e344e65187acc7ee573e87f856136d859cb346394c06794",
+  "verifier_sha256": "70113de6ee5fd50ee22f8f310e5fcaacb79e5f643c11635073dbf767062efc9f",
+  "core_source_manifest_sha256": "5e1813a77a6754c7588b4b50882d00616201de5114450a5b7adb2ca7a2d9044e",
+  "harness_source_manifest_sha256": "61615493cb8b62854e345a1f523660c5d19f29f97f0c182ad0d7bb6f34b6983b",
+  "final_artifacts": {
+    "A": {
+      "txid": "e29c695f9b7f8e9d9f32ec7c819046a0625e38ee0d4e977f0391b94958d60202",
+      "raw_sha256": "c5c005419c3ce23b0e31d9d93e186d6879e1993018abdb8607629ac7d20c1784",
+      "signed_pczt_sha256": "c3f9009ef60cb656fe69acc6370a371dce64f3f2c250e439e6e12d7f6ecc0e71",
+      "effects": {
+        "actions": 5,
+        "change_zat": 624860000,
+        "expiry_height": 148,
+        "fee_zat": 25000,
+        "memo_bytes_compared": 512,
+        "nonzero_change_outputs": 4,
+        "nonzero_inputs": 1,
+        "nonzero_payments": 1,
+        "payment_zat": 100000
+      }
+    },
+    "B": {
+      "txid": "33b9affc7b4bc9d15f03ff6214c66494b4e90f69ff32c8024b50ae132f1202dd",
+      "raw_sha256": "2c00d88adcdd473b2eeb3765c4d2bd4125fa905e588ad2cb5373e751587decb2",
+      "signed_pczt_sha256": "5de359fa2a65d231d916dd552f0294044a553c7f14410ca6857ae43a0192ff42",
+      "effects": {
+        "actions": 2,
+        "change_zat": 156105000,
+        "expiry_height": 149,
+        "fee_zat": 10000,
+        "memo_bytes_compared": 512,
+        "nonzero_change_outputs": 1,
+        "nonzero_inputs": 1,
+        "nonzero_payments": 1,
+        "payment_zat": 100000
+      }
+    }
+  },
+  "private_PCZT_raw_keys_or_credentials_in_review": false,
+  "evidence_limits": [
+    "No fresh proof verification or wallet/node queries performed by reviewer.",
+    "Original raw receiver RPC observations and logical DB snapshot bodies were asserted but not separately saved."
+  ],
+  "blocking_findings": []
+}

@@ -1,0 +1,23 @@
+{
+  "automatic_replay": false,
+  "business_ledger": "C:\\Users\\NewOwner\\Documents\\Codex\\2026-10-19\\files-pasted-by-the-user-build\\work\\real-suite-final\\successes\\business.db",
+  "construction_or_submission_calls": false,
+  "evidence_dir": "C:\\Users\\NewOwner\\Documents\\Codex\\2026-10-19\\files-pasted-by-the-user-build\\outputs\\zcash-durable-outbox\\integration\\evidence\\controlled-reorg",
+  "execute": true,
+  "node_profile": "fixed regtest genesis and exact NU6.3 activation schedule",
+  "payment_id": "bounty:real-stack-award",
+  "primary_db": "C:\\Users\\NewOwner\\Documents\\Codex\\2026-10-19\\files-pasted-by-the-user-build\\work\\real-suite-final\\primary.db",
+  "release_or_replace_quarantined_owners": false,
+  "requires_successful_nine_scenario_summary": true,
+  "sequence": [
+    "confirm existing payment and paid binding",
+    "invalidate its real mined block once",
+    "observe confirmation loss and paid false",
+    "finally reconsider same block once",
+    "verify original tip, confirmed observation and paid true"
+  ],
+  "sql_updates_to_outbox": false,
+  "unknown_lookup_proves_mining_reversal": false,
+  "wallet_rpc_calls": false,
+  "work_dir": "C:\\Users\\NewOwner\\Documents\\Codex\\2026-10-19\\files-pasted-by-the-user-build\\work\\controlled-reorg-final"
+}

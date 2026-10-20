@@ -1,0 +1,14 @@
+{
+  "case": "expiry-at-next-block",
+  "expected_success": false,
+  "exit_code": 2,
+  "passed": true,
+  "elapsed_seconds": 0.234,
+  "report": {
+    "artifact_effects_verified": false,
+    "authorization_verified": false,
+    "error": "PCZT expiry may be reached at next mining height",
+    "live_adapter_qualified": false,
+    "publication_enabled": false
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "binding_json_sha256": "a136c8bcea8d9fd2d4fcbcf0a7a95323e15f463ff72103f680d12fb10c26233c",
+  "fresh_readonly_database_snapshot": true,
+  "intent_digest": "0163f3f6a918b71da728f2f73ce3bcce5897702b641bedadb74173bcfddcd5a0",
+  "observed_before_upstream_dispatch": true,
+  "operation_id": "f318080f-d59e-4b41-9fd7-25905dcdfa5a",
+  "owner_sha256": "e54e6ddb7ca8300af1b46070a856a9ba8fc3c6824179868fc63c2d57885ff12f",
+  "payment_id": "bound-create-origin-A",
+  "proxy_call": "fe06c14811174050ad61681c92cd84a7",
+  "rpc_request_sha256": "23a3064200ea28f6dd0679002e19e03868945466197258c3382e50659877a3c3",
+  "rpc_request_size": 354
+}

@@ -1,0 +1,32 @@
+{
+  "case": "signed-original-raw",
+  "expected_success": true,
+  "exit_code": 0,
+  "passed": true,
+  "elapsed_seconds": 5.297,
+  "report": {
+    "artifact_effects_verified": true,
+    "authorization_verified": true,
+    "chain_tip_source": "caller-supplied, not authenticated by helper",
+    "consensus_txid": "340ffa32bea903483a0ff40bb166df482be26417960e4cad9cdcb5b60e461718",
+    "cryptographic_authorization_verified": true,
+    "effects": {
+      "actions": 5,
+      "change_zat": 624860000,
+      "expiry_height": 148,
+      "fee_zat": 25000,
+      "memo_bytes_compared": 512,
+      "nonzero_change_outputs": 4,
+      "nonzero_inputs": 1,
+      "nonzero_payments": 1,
+      "payment_zat": 100000
+    },
+    "helper": "offline-disabled-artifact-verifier",
+    "live_adapter_qualified": false,
+    "pczt_sha256": "a031d591035a9db122e8f0d12318666a1592ab8d02a328af02b2ca913840eb99",
+    "profile": "regtest-NU6.3-V6-Ironwood-up-to-8-actions-1-recipient",
+    "publication_enabled": false,
+    "raw_response_verified": true,
+    "raw_sha256": "a09a9118aa24baa38d226985d892fe4ed0cbb0506c7da6f41b9e2cace284b0d2"
+  }
+}

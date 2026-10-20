@@ -1,0 +1,33 @@
+{
+  "blockhash": "0f90f258994cc48d857c1c784d8155eb54b41ff1169f95eecf6ac355cf2b4a25",
+  "business_bindings_unchanged": true,
+  "construction_rpc_calls": 0,
+  "control_rpc_attempts": {
+    "invalidateblock": 1,
+    "reconsiderblock": 1
+  },
+  "controlled_node_invalidation_receipt_present": true,
+  "durable_owners_bytes_artifacts_attempts_unchanged": true,
+  "invalidated_lookup_state": "unknown",
+  "invalidated_mining_reversed": false,
+  "original_chain_restored": true,
+  "passed": true,
+  "payment_id": "bounty:real-stack-award",
+  "real_node_and_service": true,
+  "reference_paid_transition": [
+    true,
+    false,
+    true
+  ],
+  "tested_artifacts": {
+    "core_cargo_lock_sha256": "8ed8d5c62e179400ff5f7d71c504094bce0cb95d79db620548f8d261058a59e6",
+    "orchestrator_sha256": "0c2c7979d9f589a03fa401f2a54916aa46f035c87ac267b785f2b14a04a73f5a",
+    "service_sha256": "fcc4ba5c61ee93655d6e74781cc1c2646011f43afcc937e5526c7d7fbd4636f6",
+    "verifier_cargo_lock_sha256": "22490b30ebc490f24340a8029ad454cba90dd48c0315b849c2ca8d78925d92e0",
+    "verifier_sha256": "70113de6ee5fd50ee22f8f310e5fcaacb79e5f643c11635073dbf767062efc9f"
+  },
+  "transaction_submission_calls": 0,
+  "txid": "502ca67a9802a4491c373bf645040866b3861751caf5d7f750f3785575c8ad05",
+  "unknown_lookup_is_proof_of_reversal": false,
+  "wallet_rpc_calls": 0
+}
