@@ -1,0 +1,24 @@
+{
+  "actual_wallet_pipeline": true,
+  "deferred_foreign_key_child_rows": 0,
+  "http_status": 500,
+  "passed": true,
+  "real_wallet_and_node": true,
+  "scenario": "06-real-sqlite-commit-rejection",
+  "separate_wallet_quarantined": true,
+  "sqlite_error": "FOREIGN KEY constraint failed",
+  "state": {
+    "attempts": [],
+    "byte_digest": null,
+    "id": "terminal-sqlite-commit-rejection",
+    "inflight": "extract",
+    "last_error": "FOREIGN KEY constraint failed",
+    "owner": "6e71854b-43db-41f9-9694-20c140d6e14e",
+    "raw_present": false,
+    "raw_sha256": null,
+    "stage": "signed",
+    "txid": null,
+    "wallet_owner": "terminal-sqlite-commit-rejection"
+  },
+  "zero_outbox_submission": true
+}

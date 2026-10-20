@@ -1,0 +1,370 @@
+{
+  "bound_create_recovery": {
+    "A_txid": "e29c695f9b7f8e9d9f32ec7c819046a0625e38ee0d4e977f0391b94958d60202",
+    "B_txid": "33b9affc7b4bc9d15f03ff6214c66494b4e90f69ff32c8024b50ae132f1202dd",
+    "CREATE_replays": 0,
+    "cross_adoption_rejected_before_rpc": true,
+    "evidence": "bound-create-recovery/summary.json",
+    "passed": true,
+    "real_wallet_and_verifier": true,
+    "same_primary_database": true
+  },
+  "mock_wallet_or_node": false,
+  "passed": true,
+  "primary_and_secondary_quarantined": true,
+  "private_wallet_material_in_evidence": false,
+  "scenarios": [
+    {
+      "chain_observation": {
+        "blockhash": "623bd69e2f486990efa2196fe47e273e8fd9b1e1aee3b40d867c43a510d67566",
+        "confirmations": 1,
+        "last_known_mined_block": "623bd69e2f486990efa2196fe47e273e8fd9b1e1aee3b40d867c43a510d67566",
+        "mining_reversed": false,
+        "prior_mining_no_longer_observed": false,
+        "required_confirmations": 1,
+        "state": "confirmed",
+        "tip_height": 110,
+        "txid": "87cff843b572e18fb6e3627477f387c0fdce6683b21729b01a8f7549f343c65c"
+      },
+      "memo_sha256": "07c65536892061bc609c9ea3bb65ff80b05f6e8fc56211bd6c25b7475c29d523",
+      "passed": true,
+      "raw_sha256": "0d8d7f25de71a7a6893c1f2a469272cce1958fff437ead1316d0de82d5deee64",
+      "real_wallet_and_node": true,
+      "receiver_confirmations": 1,
+      "receiver_status": "mined",
+      "receiver_verified": true,
+      "scenario": "01-ordinary-and-repeat",
+      "txid": "87cff843b572e18fb6e3627477f387c0fdce6683b21729b01a8f7549f343c65c",
+      "wallet_construction_calls": {
+        "pczt_create": 1,
+        "pczt_extract": 1,
+        "pczt_prove": 1,
+        "pczt_sign": 1
+      }
+    },
+    {
+      "conflicts": 5,
+      "no_additional_construction": true,
+      "passed": true,
+      "real_wallet_and_node": true,
+      "scenario": "04-changed-intent-rejected"
+    },
+    {
+      "chain_observation": {
+        "blockhash": "fb383688511e1478e0510bc69f8103d3b1a4184a01787b3e98d9a18eee17f078",
+        "confirmations": 1,
+        "last_known_mined_block": "fb383688511e1478e0510bc69f8103d3b1a4184a01787b3e98d9a18eee17f078",
+        "mining_reversed": false,
+        "prior_mining_no_longer_observed": false,
+        "required_confirmations": 1,
+        "state": "confirmed",
+        "tip_height": 111,
+        "txid": "d84a43d4cfb463efac4406875cf726d547b34b01b17d2650aca282c30fe7d9d4"
+      },
+      "memo_sha256": "07c65536892061bc609c9ea3bb65ff80b05f6e8fc56211bd6c25b7475c29d523",
+      "one_real_pipeline": true,
+      "passed": true,
+      "raw_sha256": "d821921b07820f6e75ef46670387ebb9ad79691cbbe5bca8b73d1cfb1b6e2281",
+      "real_wallet_and_node": true,
+      "receiver_confirmations": 1,
+      "receiver_status": "mined",
+      "receiver_verified": true,
+      "scenario": "03-concurrent-same-id",
+      "statuses": [
+        200,
+        409,
+        409,
+        409
+      ],
+      "txid": "d84a43d4cfb463efac4406875cf726d547b34b01b17d2650aca282c30fe7d9d4"
+    },
+    {
+      "actual_service_restart": true,
+      "business_results": [
+        {
+          "operation": "query",
+          "paid": true,
+          "payment_id": "bounty:real-stack-award",
+          "txid": "c67a15409904539f459939ad382290407e4ebaceef6179144a761dc11444f3cd"
+        },
+        {
+          "operation": "pay",
+          "paid": true,
+          "payment_id": "bounty:real-stack-award",
+          "txid": "c67a15409904539f459939ad382290407e4ebaceef6179144a761dc11444f3cd"
+        },
+        {
+          "operation": "refresh",
+          "paid": true,
+          "payment_id": "bounty:real-stack-award",
+          "txid": "c67a15409904539f459939ad382290407e4ebaceef6179144a761dc11444f3cd"
+        },
+        {
+          "operation": "query",
+          "paid": true,
+          "payment_id": "refund:real-stack-purchase",
+          "txid": "864c2c493b286310aca4055ad3a0f5c333b8bc61312013fbe13445130e89a128"
+        },
+        {
+          "operation": "pay",
+          "paid": true,
+          "payment_id": "refund:real-stack-purchase",
+          "txid": "864c2c493b286310aca4055ad3a0f5c333b8bc61312013fbe13445130e89a128"
+        },
+        {
+          "operation": "refresh",
+          "paid": true,
+          "payment_id": "refund:real-stack-purchase",
+          "txid": "864c2c493b286310aca4055ad3a0f5c333b8bc61312013fbe13445130e89a128"
+        }
+      ],
+      "durable_business_ledger": true,
+      "observations": [
+        {
+          "chain_observation": {
+            "blockhash": "18a50ef19c6522b1820b53ea4237ede26eca737f0e2bf894d92f3ee87584d418",
+            "confirmations": 1,
+            "last_known_mined_block": "18a50ef19c6522b1820b53ea4237ede26eca737f0e2bf894d92f3ee87584d418",
+            "mining_reversed": false,
+            "prior_mining_no_longer_observed": false,
+            "required_confirmations": 1,
+            "state": "confirmed",
+            "tip_height": 112,
+            "txid": "c67a15409904539f459939ad382290407e4ebaceef6179144a761dc11444f3cd"
+          },
+          "memo_sha256": "07c65536892061bc609c9ea3bb65ff80b05f6e8fc56211bd6c25b7475c29d523",
+          "raw_sha256": "1c1b9b56efd99fe1dcbe4deea64ab286b58343833699109fbd388ce8ac1297c4",
+          "receiver_confirmations": 1,
+          "receiver_status": "mined",
+          "receiver_verified": true,
+          "txid": "c67a15409904539f459939ad382290407e4ebaceef6179144a761dc11444f3cd"
+        },
+        {
+          "raw_sha256": "d8434c1ad9a1f30fcd7765a071583a4759c6c3f1a6f1c869921d93ba43ca973c",
+          "receiver_confirmations": 1,
+          "receiver_status": "mined",
+          "receiver_verified": true,
+          "txid": "864c2c493b286310aca4055ad3a0f5c333b8bc61312013fbe13445130e89a128"
+        }
+      ],
+      "passed": true,
+      "real_wallet_and_node": true,
+      "scenario": "05-two-ids-and-reference-app",
+      "stages_serialized": true
+    },
+    {
+      "after": {
+        "attempts": [
+          {
+            "byte_digest": "12d3d1d2a04c38e180bf1a2a786b13c41e207077ffb882b3507b68e743d9f6a2",
+            "outcome": "inflight"
+          },
+          {
+            "byte_digest": "12d3d1d2a04c38e180bf1a2a786b13c41e207077ffb882b3507b68e743d9f6a2",
+            "outcome": "accepted"
+          }
+        ],
+        "byte_digest": "12d3d1d2a04c38e180bf1a2a786b13c41e207077ffb882b3507b68e743d9f6a2",
+        "id": "node-acceptance-response-lost",
+        "inflight": null,
+        "last_error": null,
+        "owner": "02351726-e19b-42b5-bea1-5e1e4ae503de",
+        "raw_present": true,
+        "raw_sha256": "12d3d1d2a04c38e180bf1a2a786b13c41e207077ffb882b3507b68e743d9f6a2",
+        "stage": "accepted",
+        "txid": "998bb903614963cd67645fb22ee334ed887ba0eea86cf8723e01fdbff3d2f056",
+        "wallet_owner": null
+      },
+      "before": {
+        "attempts": [
+          {
+            "byte_digest": "12d3d1d2a04c38e180bf1a2a786b13c41e207077ffb882b3507b68e743d9f6a2",
+            "outcome": "inflight"
+          }
+        ],
+        "byte_digest": "12d3d1d2a04c38e180bf1a2a786b13c41e207077ffb882b3507b68e743d9f6a2",
+        "id": "node-acceptance-response-lost",
+        "inflight": null,
+        "last_error": null,
+        "owner": "02351726-e19b-42b5-bea1-5e1e4ae503de",
+        "raw_present": true,
+        "raw_sha256": "12d3d1d2a04c38e180bf1a2a786b13c41e207077ffb882b3507b68e743d9f6a2",
+        "stage": "committed",
+        "txid": "998bb903614963cd67645fb22ee334ed887ba0eea86cf8723e01fdbff3d2f056",
+        "wallet_owner": null
+      },
+      "chain_observation": {
+        "blockhash": "a45da27f7e9f1154161db78d1f1623a08e8f57926e1227a6a6e97967934c3ba3",
+        "confirmations": 1,
+        "last_known_mined_block": "a45da27f7e9f1154161db78d1f1623a08e8f57926e1227a6a6e97967934c3ba3",
+        "mining_reversed": false,
+        "prior_mining_no_longer_observed": false,
+        "required_confirmations": 1,
+        "state": "confirmed",
+        "tip_height": 113,
+        "txid": "998bb903614963cd67645fb22ee334ed887ba0eea86cf8723e01fdbff3d2f056"
+      },
+      "identical_wire_sha256": [
+        "12d3d1d2a04c38e180bf1a2a786b13c41e207077ffb882b3507b68e743d9f6a2",
+        "12d3d1d2a04c38e180bf1a2a786b13c41e207077ffb882b3507b68e743d9f6a2"
+      ],
+      "memo_sha256": "07c65536892061bc609c9ea3bb65ff80b05f6e8fc56211bd6c25b7475c29d523",
+      "no_additional_construction": true,
+      "passed": true,
+      "raw_sha256": "12d3d1d2a04c38e180bf1a2a786b13c41e207077ffb882b3507b68e743d9f6a2",
+      "real_wallet_and_node": true,
+      "receiver_confirmations": 1,
+      "receiver_status": "mined",
+      "receiver_verified": true,
+      "scenario": "02-lost-node-response-restart",
+      "txid": "998bb903614963cd67645fb22ee334ed887ba0eea86cf8723e01fdbff3d2f056"
+    },
+    {
+      "get_status": 500,
+      "no_construction": true,
+      "no_submission": true,
+      "original_database_modified": false,
+      "passed": true,
+      "real_wallet_and_node": true,
+      "retry_status": 500,
+      "scenario": "09-integrity-copy-rejected"
+    },
+    {
+      "after": {
+        "attempts": [],
+        "byte_digest": null,
+        "id": "terminal-extraction-response-loss",
+        "inflight": "extract",
+        "last_error": null,
+        "owner": "baa482dc-4f2f-46f2-a5e1-21d1d1665698",
+        "raw_present": false,
+        "raw_sha256": null,
+        "stage": "signed",
+        "txid": null,
+        "wallet_owner": "terminal-extraction-response-loss"
+      },
+      "another_id_status": 409,
+      "before": {
+        "attempts": [],
+        "byte_digest": null,
+        "id": "terminal-extraction-response-loss",
+        "inflight": "extract",
+        "last_error": null,
+        "owner": "baa482dc-4f2f-46f2-a5e1-21d1d1665698",
+        "raw_present": false,
+        "raw_sha256": null,
+        "stage": "signed",
+        "txid": null,
+        "wallet_owner": "terminal-extraction-response-loss"
+      },
+      "caller_killed_before_held_response_delivery": true,
+      "caller_killed_before_remote_completion": true,
+      "no_more_construction_on_primary": true,
+      "no_submission": true,
+      "passed": true,
+      "real_wallet_and_node": true,
+      "remote_operation_completed": true,
+      "retry_status": 409,
+      "scenario": "07-wallet-response-loss-quarantine",
+      "wallet_quarantined": true
+    },
+    {
+      "actual_app_restart": true,
+      "durable_owner_retained": true,
+      "passed": true,
+      "prior_wallet_restart_evidence_is_external": false,
+      "prior_wallet_restart_evidence_sha256": null,
+      "real_wallet_and_node": true,
+      "remote_completion_after_app_death": true,
+      "scenario": "08-app-restart-and-remote-completion"
+    },
+    {
+      "actual_wallet_pipeline": true,
+      "deferred_foreign_key_child_rows": 0,
+      "http_status": 500,
+      "passed": true,
+      "real_wallet_and_node": true,
+      "scenario": "06-real-sqlite-commit-rejection",
+      "separate_wallet_quarantined": true,
+      "sqlite_error": "FOREIGN KEY constraint failed",
+      "state": {
+        "attempts": [],
+        "byte_digest": null,
+        "id": "terminal-sqlite-commit-rejection",
+        "inflight": "extract",
+        "last_error": "FOREIGN KEY constraint failed",
+        "owner": "14fc0097-11da-4a1d-8af4-11b2b8b0eafb",
+        "raw_present": false,
+        "raw_sha256": null,
+        "stage": "signed",
+        "txid": null,
+        "wallet_owner": "terminal-sqlite-commit-rejection"
+      },
+      "zero_outbox_submission": true
+    }
+  ],
+  "tested_artifacts": {
+    "core_cargo_lock_sha256": "8ed8d5c62e179400ff5f7d71c504094bce0cb95d79db620548f8d261058a59e6",
+    "core_source_manifest": {
+      "Cargo.lock": "8ed8d5c62e179400ff5f7d71c504094bce0cb95d79db620548f8d261058a59e6",
+      "Cargo.toml": "9f75bb49ecc1e6726f36b44949ee5fc53331ba4bb4239ac783e8496fadfe3cc6",
+      "src/engine.rs": "95ea169160534f5cfc2daac2a66cd2c2b868ff279aca8374c26c1deb5a5c02d7",
+      "src/intent.rs": "83de4652cf775a1738fad0ef36d327335b607138e7e9c8af4f8d486e6eef0adf",
+      "src/lib.rs": "0148fb66d861b1830e42a3b089fcdd9736178a863973f9bb09cddee096fd5140",
+      "src/main.rs": "05a6d627218dbf19ca9e367031354adadd62215789f6d8c6967193bf3172160c",
+      "src/rpc.rs": "464eea957874e2c03f7594e08cd477039e031acb5838a5acbd65341574ea136e",
+      "src/schema.sql": "fea5f8709c2b6e86e6dd93cb3b7de4e3d213e030e78809d5bd6c7ad24c45e395",
+      "src/store.rs": "eb47bb281fce09ed33cd5953877e0602f46f6bd1c1f6d0d24f2a1a1eede00222",
+      "src/store_migration.rs": "e492f08cc64ae8085995290a321efa119393b68406dd56593455572211f1f9b3",
+      "src/store_migration_tests.rs": "88b1c7a4168639527702c126de40a3caf1e8d783f1e04d295e8eeca05ab4131c",
+      "src/tests.rs": "da8bed71ee62b79253d35f284dd2240521e2bc94fdb9f270d43bb0eb5430b163",
+      "src/zallet.rs": "b751daa49c6f2ecee8f9b799ae6f48305663c063fd284c3a6c3c2ef5a2545bf2",
+      "verifier/Cargo.lock": "22490b30ebc490f24340a8029ad454cba90dd48c0315b849c2ca8d78925d92e0",
+      "verifier/Cargo.toml": "11b058b3a36c57b99b13dde801e10009ccf54e10da83647d661b473e59a54a2d",
+      "verifier/src/lib.rs": "f3b1c2ed2fab4b8288383a9b4b9d790fd634448f0f772f0597b9462d9058b3c1",
+      "verifier/src/main.rs": "3f8818f9d4fe75e0ed18514290c75355cca3f8b4cf351b592b3b7efd616faffc"
+    },
+    "core_source_manifest_sha256": "5e1813a77a6754c7588b4b50882d00616201de5114450a5b7adb2ca7a2d9044e",
+    "harness_manifest_scope": "integration Python/shell/config sources, examples and tests/scripts Python checks",
+    "harness_source_manifest": {
+      "examples/bounty_refund.py": "b270052716f7097b2f3f8b47f9495228445e106fb38b0083de3a8bf13b077f0d",
+      "examples/intent.json": "d5c7c07867cb265f30dfd1cf912b5453b727fa316b25b3aeb2c6c28a91e93d6a",
+      "examples/live-config.example.json": "4d3bfd7fcb837408a2f61845f10628efa0efc0951166c174e01efc2c11767198",
+      "integration/bootstrap-linux.sh": "c1078e6272577c8e4f78bb0efe3bda63022418fab6b94a9751f33579521e0125",
+      "integration/bootstrap-release-linux.py": "763c803346b395fcbec38cfc0a561f85b1e59cf50ca106095792cae51aae7a91",
+      "integration/bootstrap_registration.py": "9c3b0fe06083397e0acb6925b8bb41fe5a3a39dad2a7c2a88656c22e5e59fb7f",
+      "integration/configure-regtest.py": "7c9db6d2d6c44b8653d4ce8079ffdfd04678f1cd37605aa96a658d2f3b5cba4c",
+      "integration/fault_proxy.py": "5b6f864fce364a01affb42110575e36580e5800036ca63d66a4a0c9e7dc53234",
+      "integration/fund-release-regtest.py": "8a0165c2dd3843b0cf17236573c33829efd8437874367ecf24dad4897a785044",
+      "integration/pinned-sources.json": "f6071830ae6275080e2aa3e21f9b9e0cd8386e92363dedb75224e9fbe4f6c53b",
+      "integration/portable_vm.py": "cf58d1da5d9805aeaa290f23346d8528703bde5748672d19356d2d7f035c2a75",
+      "integration/preflight.py": "ccd677079cdf6965fd83838536927c7a0003926f38fe69d541655ce260e8e049",
+      "integration/prepare_fresh_run.py": "c3432e6c90b9d322380f347b0702cf762587a4f49bd24c0503bad51fc53e0156",
+      "integration/qualification_artifacts.py": "57f74b9021e90b7ae7239376dfab4653d98cac4bf8f77b952d3a85ff89eb4283",
+      "integration/qualify_extract_repeat.py": "26447f2e9672a55933c0c1ccadd05bf5ad839d212e209724de5b98e07ad0a1a4",
+      "integration/qualify_pczt.py": "e3019349149d743041701efab8a0e3781ddb78ee6d973497056820cc12b3364b",
+      "integration/qualify_reorg.py": "2da900e46f78c21a3edbce0d3fd9c1bcb042da4d65fcaa72fed0524e6ecae4a3",
+      "integration/qualify_response_loss.py": "28d03daeecfe2832735acc574f4dc5748c5512498aa1d6a91fceb95ea3759b2e",
+      "integration/qualify_wallet_restart.py": "ecbe1dbc323412428603899577f0205d8eaaa81f96259b25ce2ff8a615cd3c48",
+      "integration/test_bound_create_recovery.py": "34b18947c62ca86ea53ff8b918a61c4014c4b0ea04757c47f568444be9713632",
+      "integration/test_infrastructure.py": "651ceb515ea4b8ab82a9dd7ce1bbda18b3a380652732f5e264990c067e641acb",
+      "integration/test_real_stack.py": "535c72c414da5233fc41e852a0ff8bf6280490dda21d1fc1c4889938526cbe8d",
+      "integration/test_reference_app.py": "bfd0e6f7d820e5050406877810844e28c91fdff3f2850e7c0076c8937ecfb88e",
+      "integration/vm-downloads.json": "908136eb731ce403bb930acc62ad02338aa01593f7409b2dd6d9fece95214b65",
+      "scripts/replay_baseline.py": "f146fe4aff1f27ea45fc22e3d1e2e9f5aafeb53470dc9b17f3b3cf9b54e999e1",
+      "tests/http_smoke.py": "0e88c2142c103c7163b54edbdaa6e035bad16d3b2262969fd1210c723e6d0e46"
+    },
+    "harness_source_manifest_sha256": "61615493cb8b62854e345a1f523660c5d19f29f97f0c182ad0d7bb6f34b6983b",
+    "manifest_schema": 1,
+    "orchestrator_sha256": "535c72c414da5233fc41e852a0ff8bf6280490dda21d1fc1c4889938526cbe8d",
+    "private_runtime_inputs_in_manifest": false,
+    "service_sha256": "1bfe1868435b39329e344e65187acc7ee573e87f856136d859cb346394c06794",
+    "source_manifest_scope": "complete src trees, Rust manifests/locks and present build configuration",
+    "verifier_cargo_lock_sha256": "22490b30ebc490f24340a8029ad454cba90dd48c0315b849c2ca8d78925d92e0",
+    "verifier_sha256": "70113de6ee5fd50ee22f8f310e5fcaacb79e5f643c11635073dbf767062efc9f"
+  },
+  "wallet_process_restart_scope": {
+    "performed_in_this_run": false,
+    "prior_external_evidence_supplied": false
+  }
+}

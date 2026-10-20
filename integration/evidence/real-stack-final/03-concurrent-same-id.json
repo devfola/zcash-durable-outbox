@@ -1,0 +1,29 @@
+{
+  "chain_observation": {
+    "blockhash": "c7b242d232fa7d6b7429c7724c46065b8bbc70b6fa6441f5f1303af2833a97f4",
+    "confirmations": 1,
+    "last_known_mined_block": "c7b242d232fa7d6b7429c7724c46065b8bbc70b6fa6441f5f1303af2833a97f4",
+    "mining_reversed": false,
+    "prior_mining_no_longer_observed": false,
+    "required_confirmations": 1,
+    "state": "confirmed",
+    "tip_height": 109,
+    "txid": "1f783b38157d17bba1d79c032b828e8241011f4118b0c79ace64eb213b41647d"
+  },
+  "memo_sha256": "07c65536892061bc609c9ea3bb65ff80b05f6e8fc56211bd6c25b7475c29d523",
+  "one_real_pipeline": true,
+  "passed": true,
+  "raw_sha256": "033f52c93e2d5634b82c2fa1277dfe735f643c0f300f796bd733b2302cb5ea72",
+  "real_wallet_and_node": true,
+  "receiver_confirmations": 1,
+  "receiver_status": "mined",
+  "receiver_verified": true,
+  "scenario": "03-concurrent-same-id",
+  "statuses": [
+    200,
+    409,
+    409,
+    409
+  ],
+  "txid": "1f783b38157d17bba1d79c032b828e8241011f4118b0c79ace64eb213b41647d"
+}
