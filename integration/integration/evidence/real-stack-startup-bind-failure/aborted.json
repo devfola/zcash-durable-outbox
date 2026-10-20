@@ -1,7 +1,0 @@
-{
-  "completed_scenarios": [],
-  "error": "owned service exited during startup; inspect private service log",
-  "error_type": "RuntimeError",
-  "instruction": "Do not rerun/release owners/switch DBs; inspect durable states and reconcile.",
-  "passed": false
-}

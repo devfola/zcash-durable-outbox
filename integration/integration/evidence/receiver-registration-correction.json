@@ -1,8 +1,0 @@
-{
-  "reason": "bootstrap assumed index zero; registered shielded-only UA uses diversifier index returned by actual z_listaccounts(true)",
-  "old_registration_index": 0,
-  "corrected_registration_index": 4609796982,
-  "ufvk_account_wallet_address_unchanged": true,
-  "registered_wallet_response_sha256": "26885904c74cdbe7f8bc6eab499f53718cb2aeba83e6f3406f8231e5e5dda8cd",
-  "private_key_material_omitted": true
-}

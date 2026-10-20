@@ -1,7 +1,0 @@
-{
-  "conflicts": 5,
-  "no_additional_construction": true,
-  "passed": true,
-  "real_wallet_and_node": true,
-  "scenario": "04-changed-intent-rejected"
-}
