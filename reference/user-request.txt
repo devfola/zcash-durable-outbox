@@ -1,0 +1,87 @@
+Build the complete pre-submission MVP for the **Zcash Durable Payment Outbox**.
+
+Act as the implementation engineer. Inspect the repository, read any AGENTS.md instructions, preserve existing work, and carry the task through implementation, debugging and reproducible testing. Do not stop after a plan, scaffolding or mock tests.
+
+Read the attached proposal and feasibility package first. The existing Python model passed 15 test groups and 35 process-crash boundary cases, but uses fake wallet and chain operations. Reuse it as a specification and regression baseline. The new objective is a working demonstration against actual Zallet and Zebra processes.
+
+**Project objective**
+
+Build an open-source, self-hosted payout service that binds a business payment ID to an immutable payment intent, persists its chosen signed transaction before broadcasting, and reuses those committed transaction bytes after crashes or uncertain submission responses.
+
+Initial scope:
+
+- One host, one durable database and one dedicated payout wallet.
+- Rust service with transactional SQLite, a small authenticated HTTP API and CLI.
+- Actual Zallet PCZT integration and Zebra transaction submission.
+- One supported shielded, single-transaction payment profile.
+- A small bounty/refund reference application.
+- No distributed workers, TEX/multistep payments or automatic transaction replacement.
+
+Use disposable local-chain wallets and synthetic credentials. Do not use production wallets or real funds.
+
+**1. Qualify the actual wallet boundary first**
+
+Inspect current official source and documentation. Pin exact compatible Zallet, Zebra and dependency versions. Record the network and upgrade configuration. Do not assume an older release supports the current network.
+
+Prepare a reproducible local environment, installing the necessary tools where permitted. Docker is optional; native processes are acceptable.
+
+Fund disposable sender and receiver wallets. Exercise the real PCZT create, inspect, prove, sign and extract pipeline.
+
+Establish:
+
+- Whether each selected operation can broadcast or schedule background publication.
+- What extraction records in the wallet and how inputs become pending-spent.
+- Whether repeating extraction of a saved signed PCZT is supported.
+- How to recover when extraction succeeds in the wallet but its response disappears.
+- What happens if the wallet or application restarts during an operation.
+- Whether an RPC can continue executing after its caller dies.
+
+Use source inspection and actual experiments. Do not treat comments alone as integration proof.
+
+If an essential recovery boundary cannot be qualified, preserve the evidence, document the exact blocker and avoid building an unsafe workaround.
+
+**2. Implement the durable payout path**
+
+Provide operations to submit-or-return a payment, query its status, list unresolved payments and retry an eligible existing submission.
+
+Persist:
+
+- Business payment ID and canonical intent.
+- Network, wallet/account, recipients, integer zatoshi amounts and memo bytes.
+- Fee, expiry and privacy policies.
+- Construction ownership and in-flight operation markers.
+- Completed PCZT artifacts.
+- Chosen final transaction bytes, an integrity digest and the real Zcash transaction ID.
+- Submission attempts and relevant wallet/chain observations.
+
+Reject reuse of a payment ID with different intent. Repeating the same request must return its existing record.
+
+Inspect the transaction’s payment effects against the approved intent before publication.
+
+Serialize construction across the entire dedicated wallet. Preserve ownership across uncertain operations. Do not steal a claim merely because a timeout or lease expires: the remote operation may still be active.
+
+Persist completed artifacts before advancing stages. Commit the final transaction bytes before broadcasting, and make the broadcaster read them from durable storage.
+
+**Critical invariant:** once final bytes are committed for a payment ID, every submission retry uses those exact bytes. It must not run another construction pipeline for that payment.
+
+Before final-byte commitment, retry a stage only when the adapter’s qualified semantics make it safe. Otherwise preserve evidence and require reconciliation.
+
+**3. Test the decisive failures against the real stack**
+
+Use controlled fault injection around genuine wallet/node operations, such as an RPC proxy that drops a response after the server has acted.
+
+Demonstrate:
+
+1. Ordinary shielded payout and repeated completed request.
+2. Lost Zebra acceptance response, application restart and identical-byte resubmission.
+3. Concurrent retries for the same business ID.
+4. Rejection of changed recipients, amounts, memos or policies under an existing ID.
+5. Two distinct payment IDs sharing the wallet without construction/input-selection races.
+6. Actual outbox database COMMIT rejection before publication, with zero outbox submission.
+7. Lost responses during the PCZT pipeline, especially after extraction records the transaction.
+8. Wallet and application restarts, including remote operations completing after caller death.
+9. Detection of stored-byte integrity mismatch.
+
+After final-byte commitment, assert that retries make no additional construction calls.
+
+Verify the intended payment using the real node and receiver wallet.

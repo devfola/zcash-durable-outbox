@@ -1,0 +1,23 @@
+[package]
+name = "zcash-durable-outbox"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.95"
+license = "MIT"
+description = "Fail-closed durable single-wallet payment outbox"
+
+[dependencies]
+base64 = "=0.22.1"
+clap = { version = "=4.6.1", features = ["derive", "env"] }
+hex = "=0.4.3"
+rusqlite = { version = "=0.37.0", features = ["bundled", "hooks"] }
+serde = { version = "=1.0.228", features = ["derive"] }
+serde_json = "=1.0.149"
+sha2 = "=0.10.9"
+thiserror = "=2.0.18"
+tiny_http = "=0.12.0"
+ureq = { version = "=2.12.1", features = ["json"], default-features = false }
+uuid = { version = "=1.18.1", features = ["v4"] }
+
+[dev-dependencies]
+tempfile = "=3.27.0"

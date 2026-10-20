@@ -1,0 +1,33 @@
+[package]
+name = "outbox-artifact-verifier-disabled"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.95"
+license = "MIT"
+description = "Offline qualification helper; cannot enable or perform publication"
+
+[workspace]
+
+[dependencies]
+clap = { version = "=4.6.1", features = ["derive"] }
+hex = "=0.4.3"
+serde = { version = "=1.0.228", features = ["derive"] }
+serde_json = "=1.0.150"
+sha2 = "=0.10.9"
+rand_core = { version = "=0.6.4", features = ["getrandom"] }
+orchard = { version = "=0.15.3", features = ["circuit"] }
+zcash_note_encryption = "=0.4.1"
+pczt = { git = "https://github.com/zcash/librustzcash.git", rev = "1f6bb2072e7fcb142b0d90ff7b267a8699a84818", features = ["signer", "spend-finalizer", "tx-extractor"] }
+zcash_primitives = { git = "https://github.com/zcash/librustzcash.git", rev = "1f6bb2072e7fcb142b0d90ff7b267a8699a84818" }
+zcash_keys = { git = "https://github.com/zcash/librustzcash.git", rev = "1f6bb2072e7fcb142b0d90ff7b267a8699a84818", features = ["orchard"] }
+zcash_protocol = { git = "https://github.com/zcash/librustzcash.git", rev = "1f6bb2072e7fcb142b0d90ff7b267a8699a84818", features = ["local-consensus"] }
+
+[profile.dev]
+debug = 0
+incremental = false
+
+[profile.release]
+strip = true
+debug = 0
+incremental = false
+

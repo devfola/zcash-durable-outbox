@@ -1,0 +1,182 @@
+{
+  "probe": "local fake-wallet durable payment outbox",
+  "python": "3.12.14",
+  "sqlite": "3.53.1",
+  "passed_groups": 15,
+  "durability_boundary_cases": 35,
+  "failures": 0,
+  "scope": "process crashes and logical SQLite commit failure; no real Zcash integration",
+  "results": [
+    {
+      "test": "canonical intent binding and integer amounts",
+      "passed": true
+    },
+    {
+      "test": "business intent commit and lost create-ack boundary",
+      "passed": true,
+      "cases": 2
+    },
+    {
+      "test": "ordinary execution and completed retry",
+      "passed": true,
+      "wallet_calls": 4,
+      "broadcast_attempts": 1,
+      "distinct_broadcast_bytes": 1,
+      "economic_payments": 1
+    },
+    {
+      "test": "12 concurrent create/claim callers",
+      "passed": true,
+      "statuses": [
+        "BUSY",
+        "BUSY",
+        "ACK",
+        "BUSY",
+        "BUSY",
+        "BUSY",
+        "BUSY",
+        "BUSY",
+        "BUSY",
+        "BUSY",
+        "BUSY",
+        "BUSY"
+      ],
+      "wallet_calls": 4,
+      "broadcast_attempts": 1,
+      "distinct_broadcast_bytes": 1,
+      "economic_payments": 1
+    },
+    {
+      "test": "distinct intents serialize create through extract before input reuse",
+      "passed": true,
+      "wallet_calls": 8,
+      "broadcast_attempts": 2,
+      "distinct_broadcast_bytes": 2,
+      "economic_payments": 2
+    },
+    {
+      "test": "wallet pipeline remains assigned across a pre-broadcast retry",
+      "passed": true
+    },
+    {
+      "test": "12 concurrent retries after lost broadcast response",
+      "passed": true,
+      "wallet_calls": 4,
+      "broadcast_attempts": 2,
+      "distinct_broadcast_bytes": 1,
+      "economic_payments": 1
+    },
+    {
+      "test": "abrupt process death and restart boundary matrix",
+      "passed": true,
+      "cases": 33,
+      "points": [
+        "before_claim",
+        "after_claim",
+        "create.before_fence",
+        "create.after_fence",
+        "create.after_effect",
+        "create.after_response",
+        "create.before_commit",
+        "create.after_commit",
+        "prove.before_fence",
+        "prove.after_fence",
+        "prove.after_effect",
+        "prove.after_response",
+        "prove.before_commit",
+        "prove.after_commit",
+        "sign.before_fence",
+        "sign.after_fence",
+        "sign.after_effect",
+        "sign.after_response",
+        "sign.before_commit",
+        "sign.after_commit",
+        "extract.before_fence",
+        "extract.after_fence",
+        "extract.after_effect",
+        "extract.after_response",
+        "extract.before_commit",
+        "extract.after_commit",
+        "broadcast.before_claim",
+        "broadcast.after_claim",
+        "broadcast.before_call",
+        "broadcast.after_effect",
+        "broadcast.after_response",
+        "ack.before_commit",
+        "ack.after_commit"
+      ]
+    },
+    {
+      "test": "known non-broadcasting adapter retries exact durable stage input",
+      "passed": true,
+      "cases": [
+        {
+          "stage": "create",
+          "wallet_calls": 5,
+          "broadcast_attempts": 1,
+          "distinct_broadcast_bytes": 1,
+          "economic_payments": 1
+        },
+        {
+          "stage": "prove",
+          "wallet_calls": 5,
+          "broadcast_attempts": 1,
+          "distinct_broadcast_bytes": 1,
+          "economic_payments": 1
+        },
+        {
+          "stage": "sign",
+          "wallet_calls": 5,
+          "broadcast_attempts": 1,
+          "distinct_broadcast_bytes": 1,
+          "economic_payments": 1
+        },
+        {
+          "stage": "extract",
+          "wallet_calls": 5,
+          "broadcast_attempts": 1,
+          "distinct_broadcast_bytes": 1,
+          "economic_payments": 1
+        }
+      ]
+    },
+    {
+      "test": "unknown RPC contract safely halts instead of blindly rebuilding",
+      "passed": true,
+      "cases": 8
+    },
+    {
+      "test": "actual SQLite deferred-constraint COMMIT rejection cannot emit raw bytes",
+      "passed": true,
+      "wallet_calls": 4,
+      "broadcast_attempts": 0,
+      "distinct_broadcast_bytes": 0,
+      "economic_payments": 0
+    },
+    {
+      "test": "expiry/reorg ambiguity stops automatic replacement",
+      "passed": true,
+      "cases": 3
+    },
+    {
+      "test": "stored raw byte-integrity mismatch fails closed",
+      "passed": true
+    },
+    {
+      "test": "ordinary retry never steals an unresolved build claim",
+      "passed": true
+    },
+    {
+      "test": "adverse send-first/save-later baseline duplicates payment",
+      "passed": true,
+      "unrelated_notes": [
+        1,
+        2
+      ],
+      "wallet_calls": 8,
+      "broadcast_attempts": 2,
+      "distinct_broadcast_bytes": 2,
+      "economic_payments": 2
+    }
+  ]
+}

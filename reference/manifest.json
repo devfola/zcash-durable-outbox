@@ -1,0 +1,31 @@
+{
+  "reviewed_on": "2026-10-20",
+  "request_source": "C:\\Users\\NewOwner\\.codex\\attachments\\8f796d0a-734c-4491-ab7e-7c1f7647b9f3\\Pasted text.txt",
+  "baseline_archive": "C:\\Users\\NewOwner\\Downloads\\zcash-payment-outbox-feasibility.zip",
+  "baseline_archive_sha256": "348bcc1c7423f2049d5e3747df5d1be24f1f979e334ed61fea3ad8f7b1fdb317",
+  "available": [
+    {
+      "file": "user-request.txt",
+      "sha256": "5a15a9aef40e49ffeac3765ba3918c2fd6ed66c0d9fe3f544745c59260600359"
+    },
+    {
+      "file": "zcash-outbox-probe/README.md",
+      "sha256": "3a9b01596cce51c72a35377021962442a3cb0551c8084c7d392f4c914010254f"
+    },
+    {
+      "file": "zcash-outbox-probe/probe.py",
+      "sha256": "647f7f0f51cbfb9deb179195929c6a3fcfc8ce86af71acf6c2ff0867fcb01541"
+    },
+    {
+      "file": "zcash-outbox-probe/results.json",
+      "sha256": "68b5c64444747983e9c273fea76daedaac9d9a3d25fe16fa935c60699a2ff46e"
+    },
+    {
+      "file": "Zcash-Durable-Payment-Outbox-Proposal-and-MVP.docx",
+      "sha256": "a6252bbba41f4b4fe8e1431f6c022029259c8acd5d76909bc6154d29d89828e5"
+    }
+  ],
+  "missing": [],
+  "proposal_source": "C:\\Users\\NewOwner\\Downloads\\Zcash-Durable-Payment-Outbox-Proposal-and-MVP.docx",
+  "proposal_sha256": "a6252bbba41f4b4fe8e1431f6c022029259c8acd5d76909bc6154d29d89828e5"
+}
