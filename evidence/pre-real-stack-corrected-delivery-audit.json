@@ -1,0 +1,63 @@
+{
+  "reviewed_on": "2026-10-20",
+  "scope": "Separate in-session agent read-only source/package audit; not external review or production security certification.",
+  "source_root": "zcash-durable-outbox",
+  "excluded_directories": [
+    "target",
+    "runtime",
+    "work",
+    ".git"
+  ],
+  "files_examined_before_final_manifest": 216,
+  "proposal_uncompressed_text_members_examined": 17,
+  "json_files_examined_for_large_encoded_payloads": 98,
+  "large_encoded_artifact_candidates": 0,
+  "private_material_scan": {
+    "known_runtime_private_values_checked": 11,
+    "private_value_matches": 0,
+    "long_viewing_spending_or_private_key_pattern_matches": 0,
+    "sqlite_or_pczt_magic_files": 0,
+    "live_pczt_raw_database_cookie_key_payload_files": 0,
+    "limits": "Known-value and format scans, including executables and decompressed DOCX text, cannot prove absence of every possible secret format."
+  },
+  "generated_python_caches": {
+    "found_and_scanned": 19,
+    "archive_exclusion_confirmed_by_packager": true
+  },
+  "packaged_artifacts": {
+    "service_sha256": "1bfe1868435b39329e344e65187acc7ee573e87f856136d859cb346394c06794",
+    "verifier_sha256": "70113de6ee5fd50ee22f8f310e5fcaacb79e5f643c11635073dbf767062efc9f",
+    "matches_correction_summary_and_BUILD_metadata": true,
+    "corrected_core_source_hashes_compared": 13,
+    "all_corrected_core_source_hashes_match": true
+  },
+  "correction_source_review": {
+    "binding_committed_with_pre_CREATE_fence": true,
+    "binding_json_written_before_CREATE": true,
+    "exact_operation_payment_owner_intent_digest_and_directory_checks": true,
+    "source_binding_reread_with_artifacts": true,
+    "same_binding_rechecked_in_adoption_transaction": true,
+    "legacy_unbound_create_has_no_backfill_or_recovery": true,
+    "case_insensitive_nonnull_txid_uniqueness_and_transactional_duplicate_refusal": true
+  },
+  "validation_reports_reviewed_not_rerun_by_auditor": {
+    "corrected_rust_tests_passed": 43,
+    "compiled_http_cli_checks_passed": 10,
+    "http_cli_node_calls": 0,
+    "format_clippy_build_passed": true,
+    "production_adapter_matching_binding_fixture_passed": true,
+    "fixture_scope": "Synthetic evidence/verifier and local read-only RPCs; no real PCZT or chain qualification."
+  },
+  "documentation_and_evidence_scope": {
+    "current_README_docs_BUILD_and_root_summary_distinguish_corrected_local_from_historical_real_runs": true,
+    "corrected_real_stack_rerun_claimed": false,
+    "historical_nine_scenario_service_sha256": "fcc4ba5c61ee93655d6e74781cc1c2646011f43afcc937e5526c7d7fbd4636f6",
+    "historical_saved_CREATE_and_reorg_not_used_to_qualify_corrected_binary": true,
+    "remaining_operational_release_gates_documented": true
+  },
+  "post_scan_delta": "Only the new synthetic production-adapter fixture and final metadata/docs changed after the full payload scan; that fixture was read and all final corrected core hashes were compared again.",
+  "audit_executed_builds_tests_or_live_RPC": false,
+  "final_archive_and_SOURCE_SHA256_manifest": "Not audited here; intentionally regenerated afterward by the parent packager.",
+  "findings_requiring_resolution_before_packaging": [],
+  "result": "passed_for_stated_source_package_scope"
+}

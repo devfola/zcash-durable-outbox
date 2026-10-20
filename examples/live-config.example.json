@@ -1,0 +1,8 @@
+{
+  "wallet_url": "http://127.0.0.1:50232",
+  "node_url": "http://127.0.0.1:29232",
+  "credential_file": "/private/disposable/rpc-credential.txt",
+  "trusted_wallet": "/private/disposable/sender-viewing-registration.json",
+  "verifier": "/path/to/outbox-artifact-verifier-disabled",
+  "evidence_dir": "/private/disposable/outbox-rpc-evidence"
+}

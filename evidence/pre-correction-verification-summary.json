@@ -1,0 +1,103 @@
+{
+  "reviewed_on": "2026-10-20",
+  "timezone": "America/Toronto",
+  "delivery_status": "working_disposable_regtest_MVP_with_open_release_gates",
+  "publication_enabled": "explicit qualified NU6.3 regtest config only; default disabled",
+  "rust_toolchain": "1.95.0-x86_64-pc-windows-msvc",
+  "rust_tests": {
+    "passed": 32,
+    "failed": 0,
+    "scope": "real SQLite and fixture adapters; exact final service also exercised by real-stack suite",
+    "evidence": "rust-tests.log"
+  },
+  "rust_clippy": {
+    "passed": true,
+    "arguments": "--locked --all-targets -- -D warnings"
+  },
+  "rust_format": {
+    "passed": true
+  },
+  "python_baseline_replay": {
+    "passed_groups": 15,
+    "process_crash_boundaries": 35,
+    "failures": 0,
+    "scope": "supplied fake-wallet model with documented synchronization-only patch",
+    "evidence": "baseline-replay-synchronized.json"
+  },
+  "http_cli_smoke": {
+    "passed_checks": 10,
+    "failed": 0,
+    "scope": "actual compiled Rust service; qualification gate and local node trap",
+    "node_calls": 0,
+    "evidence": "http-smoke.json"
+  },
+  "fault_proxy_and_configuration": {
+    "passed_tests": 9,
+    "failed": 0,
+    "scope": "local HTTP infrastructure fixtures, not Zallet/Zebra",
+    "evidence": "../integration/evidence/infrastructure-tests.log"
+  },
+  "actual_zallet_zebra": {
+    "processes_started": true,
+    "wallets_funded": true,
+    "pczt_pipeline_exercised": true,
+    "receiver_verified": true,
+    "required_real_stack_scenarios_completed": 9,
+    "runtime_status": "fresh pair; all nine real scenarios passed; terminal claims retained",
+    "evidence": "../integration/evidence/real-stack-final/summary.json",
+    "tested_artifacts": {
+      "core_cargo_lock_sha256": "8ed8d5c62e179400ff5f7d71c504094bce0cb95d79db620548f8d261058a59e6",
+      "orchestrator_sha256": "0c2c7979d9f589a03fa401f2a54916aa46f035c87ac267b785f2b14a04a73f5a",
+      "service_sha256": "fcc4ba5c61ee93655d6e74781cc1c2646011f43afcc937e5526c7d7fbd4636f6",
+      "verifier_cargo_lock_sha256": "22490b30ebc490f24340a8029ad454cba90dd48c0315b849c2ca8d78925d92e0",
+      "verifier_sha256": "70113de6ee5fd50ee22f8f310e5fcaacb79e5f643c11635073dbf767062efc9f"
+    }
+  },
+  "blockers": [
+    "NU7/public-network release qualification is not satisfied by NU6.3 regtest",
+    "verified restore/freshness enforcement is not implemented",
+    "general lost-extraction recovery remains quarantined; only saved CREATE response reconciliation is qualified",
+    "real expiry/rejection qualification and external review/adoption remain release work"
+  ],
+  "proposal_review": {
+    "status": "correct proposal received and read fully",
+    "source": "../reference/Zcash-Durable-Payment-Outbox-Proposal-and-MVP.docx",
+    "sha256": "a6252bbba41f4b4fe8e1431f6c022029259c8acd5d76909bc6154d29d89828e5",
+    "alignment": "../docs/proposal-alignment.md",
+    "code_changed": true,
+    "new_actual_stack_tests": true,
+    "follow_up": "correct proposal preserved; exact requested nine real-stack scenarios now passed; funded release gates remain distinct"
+  },
+  "portable_linux": {
+    "booted": true,
+    "ssh_verified": true,
+    "acceleration": "existing WHPX, machine pc with kernel-irqchip=off",
+    "guest": "Ubuntu Minimal 24.04",
+    "vcpus": 4,
+    "ram_gib": 6,
+    "host_os_features_changed": false,
+    "note": "verified portable VM; packaged fresh-state funding recipe executed successfully with verified reused release binaries"
+  },
+  "runtime_candidate": {
+    "zallet_commit": "987382f67e622915228686e9f956c6a9c9a7514c",
+    "zallet_tag": "v0.1.0-beta.3",
+    "backend": "zaino",
+    "zebra_commit": "7121c82ba6795a151523d5b308a19743f4a1ade7",
+    "zebra_tag": "v6.2.3",
+    "qualification": "bounded NU6.3 regtest boundary and nine service scenarios passed"
+  },
+  "offline_payment_verifier": {
+    "passed_cases": 18,
+    "failed": 0,
+    "evidence": "../integration/evidence/real-pczt-verifier/summary.json"
+  },
+  "reference_app": {
+    "local_durability_checks": 8,
+    "actual_payout_and_own_restart": true,
+    "paid_only_after_confirmations": true
+  },
+  "controlled_reorg": {
+    "passed": true,
+    "evidence": "../integration/evidence/controlled-reorg/summary.json"
+  }
+}

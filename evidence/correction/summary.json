@@ -1,0 +1,111 @@
+{
+  "reviewed_on": "2026-10-20",
+  "correction": "saved_CREATE_original_payment_operation_binding",
+  "status": "implemented_and_local_regressions_passed",
+  "schema_version": 3,
+  "on_chain_loss_demonstrated": false,
+  "tested_artifacts": {
+    "service_sha256": "1bfe1868435b39329e344e65187acc7ee573e87f856136d859cb346394c06794",
+    "verifier_sha256": "70113de6ee5fd50ee22f8f310e5fcaacb79e5f643c11635073dbf767062efc9f",
+    "core_sources_sha256": {
+      "Cargo.toml": "9f75bb49ecc1e6726f36b44949ee5fc53331ba4bb4239ac783e8496fadfe3cc6",
+      "Cargo.lock": "8ed8d5c62e179400ff5f7d71c504094bce0cb95d79db620548f8d261058a59e6",
+      "src/engine.rs": "95ea169160534f5cfc2daac2a66cd2c2b868ff279aca8374c26c1deb5a5c02d7",
+      "src/intent.rs": "83de4652cf775a1738fad0ef36d327335b607138e7e9c8af4f8d486e6eef0adf",
+      "src/lib.rs": "0148fb66d861b1830e42a3b089fcdd9736178a863973f9bb09cddee096fd5140",
+      "src/main.rs": "05a6d627218dbf19ca9e367031354adadd62215789f6d8c6967193bf3172160c",
+      "src/rpc.rs": "464eea957874e2c03f7594e08cd477039e031acb5838a5acbd65341574ea136e",
+      "src/schema.sql": "fea5f8709c2b6e86e6dd93cb3b7de4e3d213e030e78809d5bd6c7ad24c45e395",
+      "src/store.rs": "eb47bb281fce09ed33cd5953877e0602f46f6bd1c1f6d0d24f2a1a1eede00222",
+      "src/store_migration.rs": "e492f08cc64ae8085995290a321efa119393b68406dd56593455572211f1f9b3",
+      "src/store_migration_tests.rs": "88b1c7a4168639527702c126de40a3caf1e8d783f1e04d295e8eeca05ab4131c",
+      "src/tests.rs": "da8bed71ee62b79253d35f284dd2240521e2bc94fdb9f270d43bb0eb5430b163",
+      "src/zallet.rs": "b751daa49c6f2ecee8f9b799ae6f48305663c063fd284c3a6c3c2ef5a2545bf2"
+    }
+  },
+  "rust_tests": {
+    "passed": 43,
+    "failed": 0,
+    "scope": "42 library + 1 CLI; real SQLite, local fixture adapters and offline provenance checks; no real wallet/chain claims",
+    "evidence": "rust-tests.log"
+  },
+  "format_check": {
+    "passed": true
+  },
+  "clippy": {
+    "passed": true,
+    "arguments": "--locked --all-targets -- -D warnings",
+    "evidence": "rust-clippy.log"
+  },
+  "build": {
+    "passed": true,
+    "profile": "debug",
+    "rust": "1.95.0-x86_64-pc-windows-msvc",
+    "evidence": "rust-build.log"
+  },
+  "http_cli_smoke": {
+    "passed_checks": 10,
+    "node_calls": 0,
+    "evidence": "http-smoke.json"
+  },
+  "required_regression": {
+    "test": "tests::saved_create_cannot_cross_identical_payment_ids_and_original_recovers_without_create",
+    "passed": true,
+    "scope": "Engine/SQLite with explicitly synthetic wallet/node fixtures",
+    "production_adapter_test": "zallet::tests::production_recovery_rejects_identical_payment_a_for_b_then_accepts_original_b",
+    "production_adapter_scope": "production Zallet recovery through Engine/SQLite with synthetic evidence, a static executable verifier fixture, and local read-only RPC replies; no real wallet, PCZT verification or chain claim",
+    "production_adapter_assertions": [
+      "A and B have byte-identical saved response bodies but distinct durable operation bindings",
+      "A response rejected for B before any RPC",
+      "B original response accepted through production recovery under original binding",
+      "only getblockchaininfo, getblockhash and pczt_inspect; no CREATE replay, construction, publication or submission attempts"
+    ],
+    "assertions": [
+      "binding and fence committed before CREATE as observed through fresh connection",
+      "A and B have identical intent digests and distinct operation IDs",
+      "A response rejected for B; B owner, wallet slot and create fence retained; A unchanged",
+      "B original response recovers its created artifact under original binding",
+      "restart continues B without third CREATE; both sends use their own committed bytes"
+    ]
+  },
+  "adapter_provenance_regressions": {
+    "passed": true,
+    "scope": "production adapter rejection paths, offline fixture files and zero-RPC sentinel",
+    "checks": [
+      "missing legacy binding",
+      "wrong operation, payment, owner, or intent digest",
+      "different directory operation ID",
+      "existing unbound operation cannot be retroactively bound",
+      "wrong request, intent, PCZT, or evidence root"
+    ]
+  },
+  "migration_regressions": {
+    "passed": true,
+    "checks": [
+      "v1 digest upgrade retained",
+      "v2 to v3 keeps uppercase legacy txids and retained fences",
+      "duplicate txids including case variants refuse transactionally with every original row and schema version retained",
+      "case-insensitive unique index permits multiple nulls",
+      "duplicate final commit rolls back without releasing extraction ownership or recording submission",
+      "legacy unbound CREATE rejected before response read or adapter call",
+      "canonical node receipt accepts preserved legacy txid spelling"
+    ]
+  },
+  "historical_real_stack": {
+    "evidence": "../../integration/evidence/real-stack-final/summary.json",
+    "scenarios_passed": 9,
+    "service_sha256": "fcc4ba5c61ee93655d6e74781cc1c2646011f43afcc937e5526c7d7fbd4636f6",
+    "qualifies_corrected_binary": false,
+    "new_real_stack_run": false
+  },
+  "operational_release_gates": [
+    "externally anchored freshness and verified restore across business ledger, Outbox and wallet",
+    "enforced or reliably verified disabled broadcasting and exclusive construction authority",
+    "NU7 qualification",
+    "actual expiry and rejection experiments",
+    "broader recovery and proven-safe error classification without ownership clearing",
+    "external review"
+  ],
+  "supported_shape": "exactly one positive Ironwood sender input; one positive recipient; 2 through 8 actions",
+  "qualification": "local correction checks only; disposable NU6.3 regtest profile remains bounded; no operational release"
+}

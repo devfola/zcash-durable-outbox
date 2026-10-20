@@ -1,0 +1,36 @@
+--- preserved/probe.py
++++ replay/probe.py
+@@ -159,7 +159,13 @@
+         self.root, self.crash, self.lost, self.pause = Path(root), crash, lost, pause
+ 
+     def call(self, stage, input_bytes):
+-        if self.pause and stage == "create":
++        if self.pause == -1 and stage == "create":
++            (self.root / "create-entered").touch()
++            deadline = time.monotonic() + 30
++            while not (self.root / "release-create").exists():
++                assert time.monotonic() < deadline, "create gate timed out"
++                time.sleep(.005)
++        elif self.pause and stage == "create":
+             time.sleep(self.pause)
+         with contextlib.closing(db(self.root / "wallet.db")) as c, transaction(c):
+             seq = c.execute("SELECT COALESCE(MAX(seq),0)+1 FROM calls").fetchone()[0]
+@@ -465,13 +471,17 @@
+         root = new("different-intents")
+         submit(root, "invoice-2", PAYLOAD)
+         first = subprocess.Popen([sys.executable, str(Path(__file__).resolve()), "worker", str(root),
+-                                  "--intent", "invoice-1", "--pause", ".2"], stdout=subprocess.PIPE,
++                                  "--intent", "invoice-1", "--pause", "-1"], stdout=subprocess.PIPE,
+                                  stderr=subprocess.PIPE, text=True)
+         deadline = time.monotonic() + 5
+         while row(root)["state"] != "BUILDING":
+             assert time.monotonic() < deadline, "first builder failed to claim"
+             time.sleep(.005)
++        while not (root / "create-entered").exists():
++            assert time.monotonic() < deadline, "first builder did not enter create"
++            time.sleep(.005)
+         second = child(root, "--intent", "invoice-2")
++        (root / "release-create").touch()
+         assert json.loads(second.stdout)["status"] == "BUSY_WALLET"
+         out, err = first.communicate(timeout=30)
+         assert first.returncode == 0, (out, err)

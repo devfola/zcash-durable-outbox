@@ -1,0 +1,87 @@
+{
+  "audit_executed_builds_tests_or_live_RPC": false,
+  "candidate_files_scanned_before_audit_replacement": 237,
+  "candidate_suffix_counts": {
+    ".docx": 1,
+    ".exe": 2,
+    ".json": 123,
+    ".jsonl": 31,
+    ".lock": 2,
+    ".log": 13,
+    ".md": 17,
+    ".patch": 1,
+    ".py": 24,
+    ".rs": 12,
+    ".sh": 1,
+    ".sql": 1,
+    ".toml": 2,
+    ".txt": 3,
+    "<none>": 4
+  },
+  "corrected_run_artifact_binding": {
+    "core_source_files_checked": 17,
+    "core_source_manifest_sha256": "5e1813a77a6754c7588b4b50882d00616201de5114450a5b7adb2ca7a2d9044e",
+    "current_full_manifest_matches_run": true,
+    "harness_source_files_checked": 26,
+    "harness_source_manifest_sha256": "61615493cb8b62854e345a1f523660c5d19f29f97f0c182ad0d7bb6f34b6983b",
+    "service_sha256": "1bfe1868435b39329e344e65187acc7ee573e87f856136d859cb346394c06794",
+    "summary_manifest_matches_initial": true,
+    "verifier_sha256": "70113de6ee5fd50ee22f8f310e5fcaacb79e5f643c11635073dbf767062efc9f"
+  },
+  "docx_or_zip_members_scanned_uncompressed": 18,
+  "docx_or_zip_uncompressed_bytes_scanned": 860600,
+  "excluded_directories": [
+    ".git",
+    "__pycache__",
+    "runtime",
+    "target",
+    "work"
+  ],
+  "final_archive_and_SOURCE_SHA256_manifest": "Not audited here; regenerated afterward by the parent packager.",
+  "findings_requiring_resolution_before_packaging": [],
+  "historical_preservation": {
+    "changed_or_missing_files": [],
+    "old_correction_summary_unchanged": true,
+    "pinned_files_checked": 48,
+    "unchanged": true
+  },
+  "previous_audit_preserved": "pre-real-stack-corrected-delivery-audit.json",
+  "previous_audit_sha256": "5732a3b3b87ecf7c9380b26e461b745a25d18ba83149afc8c363ede4d740c461",
+  "private_material_scan": {
+    "documented_prior_synthetic_default_match_files": [
+      "integration/configure-regtest.py",
+      "integration/fund-release-regtest.py"
+    ],
+    "known_private_match_files": [],
+    "known_private_source_files_checked": 18,
+    "known_private_values_and_safe_encodings_checked": 19,
+    "large_encoded_payload_candidate_files": [],
+    "limits": "Known-value/format/structure scans include executables and decompressed DOCX content, but cannot prove absence of every possible unknown secret format.",
+    "live_sqlite_or_pczt_magic_files": [],
+    "new_corrected_001_private_source_files_checked": 4,
+    "private_format_match_files": [],
+    "private_or_live_artifact_extension_files": [],
+    "synthetic_fixture_scope": "Local test placeholders/NOT-A-PCZT fixtures and unchanged original fake feasibility baseline are not actual private wallet artifacts."
+  },
+  "public_results_scope_review": {
+    "fresh_wallet_process_restart_or_reorg_not_claimed_for_this_runner": true,
+    "independent_AB_saved_artifact_review_reviewed": "integration/evidence/real-stack-corrected-001/bound-create-recovery/independent-review.json",
+    "new_aggregate_metadata_reviewed": "evidence/corrected-real-stack-verification.json",
+    "new_corrected_acceptance_report_reviewed": "docs/corrected-real-stack-acceptance.md",
+    "new_post_run_lifecycle_inspection_provisioning_and_final_docs_included_in_payload_scan": true,
+    "new_run_separated_from_unchanged_historical_correction_and_real_results": true,
+    "operational_release_limits_and_evidence_capture_limits_disclosed": true,
+    "saved_artifact_review_distinguished_from_external_security_review_or_new_crypto_execution": true
+  },
+  "reported_results_reviewed_not_reexecuted": {
+    "fresh_wallet_process_restart_performed": false,
+    "genuine_bound_create_recovery_and_cross_adoption_rejection_passed": true,
+    "nine_actual_scenarios_passed": true,
+    "prior_external_wallet_restart_evidence_supplied": false,
+    "terminal_owners_and_quarantines_reported_preserved": true
+  },
+  "result": "passed_for_stated_package_scope",
+  "reviewed_at_utc": "2026-10-20T16:32:57.810504+00:00",
+  "scope": "Independent in-session agent read-only package/evidence audit; not external review or production security certification.",
+  "source_root": "zcash-durable-outbox"
+}

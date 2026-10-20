@@ -1,0 +1,17 @@
+{
+  "reviewed_on": "2026-10-20",
+  "source": "C:\\Users\\NewOwner\\Downloads\\Zcash-Durable-Payment-Outbox-Proposal-and-MVP.docx",
+  "reference": "reference/Zcash-Durable-Payment-Outbox-Proposal-and-MVP.docx",
+  "sha256": "a6252bbba41f4b4fe8e1431f6c022029259c8acd5d76909bc6154d29d89828e5",
+  "titles": [
+    "Zcash Durable Payment Outbox",
+    "Project proposal and pre submission MVP plan   |   19 October 2026"
+  ],
+  "nonempty_paragraphs_including_tables": 74,
+  "embedded_files": false,
+  "read_fully": true,
+  "role": "source specification; explicit user request governs actions",
+  "previous_missing_proposal_blocker": "cleared",
+  "publication_enabled": false,
+  "new_runtime_evidence": false
+}

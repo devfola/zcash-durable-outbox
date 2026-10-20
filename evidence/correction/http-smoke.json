@@ -1,0 +1,24 @@
+{
+  "test": "actual Rust HTTP/CLI qualification-gate smoke",
+  "passed": true,
+  "checks": [
+    "actual Rust CLI init/submit/get/unresolved and blocked retry",
+    "authenticated health reports publication disabled",
+    "read, registration, and retry require bearer authentication",
+    "same business ID and canonical intent return existing payment",
+    "changed amount/memo/address/fee/expiry/privacy rejected: [409, 409, 409, 409, 409, 400]",
+    "12 concurrent identical registrations and 12 blocked retries",
+    "bounty and refund reference application registers and queries without claiming payment",
+    "application restart preserves identities and pending intent records",
+    "SQLite records zero construction artifacts/events, transaction bytes or submission attempts; node trap received zero calls",
+    "restored synthetic committed row passes byte-integrity read but executable blocks HTTP/CLI publication with zero attempts and node calls"
+  ],
+  "database_counts": {
+    "payments": 4,
+    "artifacts": 0,
+    "attempts": 0,
+    "events": 0
+  },
+  "node_requests": 0,
+  "scope": "actual service process and SQLite; no real wallet/node or payout integration"
+}

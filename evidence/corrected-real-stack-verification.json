@@ -1,0 +1,54 @@
+{
+  "recorded_utc": "2026-10-20T16:27:56.153951+00:00",
+  "status": "corrected_executable_fresh_real_stack_qualification_passed",
+  "operational_release": false,
+  "new_real_scenarios_passed": 9,
+  "new_genuine_bound_CREATE_regression_passed": true,
+  "mock_wallet_or_verifier_used_for_new_results": false,
+  "service_sha256": "1bfe1868435b39329e344e65187acc7ee573e87f856136d859cb346394c06794",
+  "verifier_sha256": "70113de6ee5fd50ee22f8f310e5fcaacb79e5f643c11635073dbf767062efc9f",
+  "core_source_manifest_sha256": "5e1813a77a6754c7588b4b50882d00616201de5114450a5b7adb2ca7a2d9044e",
+  "harness_source_manifest_sha256": "61615493cb8b62854e345a1f523660c5d19f29f97f0c182ad0d7bb6f34b6983b",
+  "core_source_files": 17,
+  "harness_source_files": 26,
+  "sources_and_binaries_unchanged_throughout_run": true,
+  "new_evidence": "../integration/evidence/real-stack-corrected-001/summary.json",
+  "new_bound_CREATE_evidence": "../integration/evidence/real-stack-corrected-001/bound-create-recovery/summary.json",
+  "complete_source_and_harness_manifests": "../integration/evidence/real-stack-corrected-001/tested-artifacts.json",
+  "fresh_environment": "../integration/evidence/corrected-fresh-environment.json",
+  "historical_evidence_preserved": "../integration/evidence/real-stack-corrected-001/historical-evidence-preserved.json",
+  "prior_local_correction_report_unchanged": "correction/summary.json",
+  "cross_payment_response_rejected_before_RPC": true,
+  "B_original_response_recovered_without_CREATE_replay": true,
+  "B_recovery_RPCs": {
+    "node": {
+      "getblockchaininfo": 1,
+      "getblockhash": 1
+    },
+    "wallet": {
+      "pczt_inspect": 1
+    }
+  },
+  "same_primary_Outbox_database_for_AB_and_nine": true,
+  "pre_dispatch_durable_binding_proof": true,
+  "both_A_and_B_completed_and_receiver_verified": true,
+  "terminal_wallet_quarantines_retained": true,
+  "wallet_process_restart_performed_in_this_run": false,
+  "historical_external_restart_evidence_imported": false,
+  "profile": "fresh disposable regtest, NU6.3/V6/Ironwood; exactly one positive input, one recipient, 2 through 8 actions",
+  "on_chain_loss_demonstrated": false,
+  "remaining_operational_release_gates": [
+    "externally anchored freshness and verified restore across business ledger, Outbox and wallet",
+    "enforced or reliably verified disabled broadcasting and exclusive construction authority",
+    "NU7 qualification",
+    "actual expiry and rejection experiments",
+    "broader recovery and proven-safe error classification without ownership clearing",
+    "external review"
+  ],
+  "acceptance_report": "../docs/corrected-real-stack-acceptance.md",
+  "read_only_post_run_inspection": "../integration/evidence/real-stack-corrected-001/post-run-inspection.json",
+  "verified_graceful_shutdown": "../integration/evidence/real-stack-corrected-001/lifecycle.json",
+  "independent_in_session_AB_review": "../integration/evidence/real-stack-corrected-001/bound-create-recovery/independent-review.json",
+  "task_VM_and_tunnel_stopped": true,
+  "review_is_external_security_certification": false
+}

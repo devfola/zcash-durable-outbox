@@ -1,0 +1,4 @@
+PASS: 15 groups; 35 actual process-crash durability boundaries; 0 failures
+Safe model: one fixture payment; retries broadcast only committed identical bytes.
+Adverse baseline: two fixture payments from unrelated notes after send/save crash.
+Limit: fake wallet/chain only; no global exactly-once, real RPC, consensus, or power-loss proof.

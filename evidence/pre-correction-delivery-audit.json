@@ -1,0 +1,15 @@
+{
+  "scope": "separate in-session agent delivery audit; not external human or production security certification",
+  "files_examined_before_generated_manifest": 187,
+  "known_private_values_checked": 10,
+  "private_value_matches": 0,
+  "long_viewing_or_private_key_pattern_matches": 0,
+  "live_pczt_raw_database_key_files_present": false,
+  "packaged_executables_match_final_test_hashes": true,
+  "all_nine_real_scenarios_passed": true,
+  "controlled_reorg_passed": true,
+  "synthetic_fixtures_and_original_model_labeled": true,
+  "remaining_release_limits_documented": true,
+  "guest_shutdown_requested_successfully": true,
+  "runtime_wallet_chain_and_quarantined_outbox_state_preserved": true
+}

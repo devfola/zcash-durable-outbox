@@ -1,0 +1,71 @@
+warning: hard linking files in the incremental compilation cache failed. copying files instead. consider moving the cache directory to a file system which supports hard linking in session dir `\\?\C:\Users\NewOwner\Documents\Codex\2026-10-19\files-pasted-by-the-user-build\outputs\zcash-durable-outbox\target\debug\incremental\zcash_durable_outbox-13407yx20iib9\s-hne4mvwm3n-0wypumh-working`
+
+warning: hard linking files in the incremental compilation cache failed. copying files instead. consider moving the cache directory to a file system which supports hard linking in session dir `\\?\C:\Users\NewOwner\Documents\Codex\2026-10-19\files-pasted-by-the-user-build\outputs\zcash-durable-outbox\target\debug\incremental\zcash_durable_outbox-3vrud47vlf8uv\s-hne4mvwm3h-0tkm6l9-working`
+
+warning: `zcash-durable-outbox` (lib) generated 1 warning
+warning: `zcash-durable-outbox` (lib test) generated 1 warning
+warning: hard linking files in the incremental compilation cache failed. copying files instead. consider moving the cache directory to a file system which supports hard linking in session dir `\\?\C:\Users\NewOwner\Documents\Codex\2026-10-19\files-pasted-by-the-user-build\outputs\zcash-durable-outbox\target\debug\incremental\zcash_durable_outbox-1aouq408pj4c0\s-hne4mwzrzh-01am6ac-working`
+
+warning: `zcash-durable-outbox` (bin "zcash-durable-outbox" test) generated 1 warning
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.20s
+     Running unittests src\lib.rs (outputs\zcash-durable-outbox\target\debug\deps\zcash_durable_outbox-06d40f465469c9dc.exe)
+
+running 42 tests
+test rpc::pinned_profile_tests::canonical_node_receipt_preserves_valid_legacy_txid_spelling ... ok
+test rpc::pinned_profile_tests::rejects_mainnet_and_public_testnet_geneses ... ok
+test rpc::pinned_profile_tests::accepts_captured_real_nu63_regtest_report ... ok
+test rpc::pinned_profile_tests::rejects_altered_upgrade_activation ... ok
+test rpc::pinned_profile_tests::rejects_inactive_upgrade_or_different_next_branch ... ok
+test rpc::pinned_profile_tests::rejects_missing_or_additional_upgrade ... ok
+test tests::actual_v6_header_uses_chosen_expiry_within_approved_range ... ok
+test tests::bundled_adapter_is_fail_closed_without_claim_or_network_effects ... ok
+test store_migration_tests::duplicate_legacy_txids_refuse_migration_without_choosing_a_winner ... ok
+test store_migration_tests::legacy_inflight_create_without_original_binding_blocks_before_adapter_or_response_read ... ok
+test store_migration_tests::schema_two_upgrade_enforces_case_insensitive_txids_and_preserves_legacy_fences ... ok
+test tests::endpoint_policy_rejects_remote_targets_and_redirects ... ok
+test tests::distinct_ids_cannot_overlap_wallet_construction ... ok
+test tests::completed_artifact_resumes_under_same_owner_without_repeating_create ... ok
+test tests::actual_sqlite_final_commit_rejection_has_zero_submission_and_retains_wallet_fence ... ok
+test store_migration_tests::duplicate_final_txid_rolls_back_bytes_and_keeps_extraction_ownership ... ok
+test tests::accepted_lost_response_restart_resubmits_identical_durable_bytes_no_wallet_calls ... ok
+test tests::completed_request_returns_same_record_without_more_construction_or_submission ... ok
+test tests::immutable_intent_canonical_binding_and_integer_validation ... ok
+test tests::concurrent_same_id_claims_and_postcommit_retries_never_rebuild ... ok
+test tests::expiry_or_reorg_observation_never_triggers_replacement ... ok
+test tests::executable_publication_gate_rejects_preexisting_committed_bytes_before_attempt ... ok
+test tests::saved_create_reconciliation_requires_original_owner_stage_and_wallet_slot ... ok
+test tests::schema_one_migration_preserves_payment_and_backfills_digest ... ok
+test tests::persisted_intent_digest_detects_corruption_and_recovery_view_omits_artifacts ... ok
+test zallet::tests::evidence_directory_can_reopen_but_operations_have_exclusive_locks ... ok
+test zallet::tests::create_does_not_bind_or_reuse_existing_unbound_evidence ... ok
+test zallet::tests::offline_constructor_binds_identity_and_rejects_changed_trust_files ... ok
+test tests::preflight_failure_persists_diagnostics_without_submission_or_replacement ... ok
+test zallet::tests::recover_created_rejects_different_directory_operation_before_rpc ... ok
+test zallet::tests::recover_created_rejects_missing_original_binding_before_rpc ... ok
+test zallet::tests::recover_created_rejects_response_artifact_mismatch_before_rpc ... ok
+test zallet::tests::recover_created_rejects_each_wrong_saved_binding_field_before_rpc ... ok
+test tests::every_lost_precommit_response_blocks_restart_and_retains_completed_artifacts ... ok
+test zallet::tests::recover_created_rejects_response_outside_evidence_root_before_rpc ... ok
+test zallet::tests::recover_created_rejects_wrong_recorded_request_before_rpc ... ok
+test zallet::tests::recover_created_rejects_wrong_saved_intent_before_rpc ... ok
+test tests::unknown_observation_keeps_mined_history_for_later_reorg_evidence ... ok
+test tests::saved_create_cannot_cross_identical_payment_ids_and_original_recovers_without_create ... ok
+test tests::separate_payments_release_wallet_only_with_final_commit ... ok
+test tests::sqlite_enforces_final_immutability_and_corruption_is_detected_even_after_acceptance ... ok
+test zallet::tests::production_recovery_rejects_identical_payment_a_for_b_then_accepts_original_b ... ok
+
+test result: ok. 42 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.13s
+
+     Running unittests src\main.rs (outputs\zcash-durable-outbox\target\debug\deps\zcash_durable_outbox-6e1d57624675532a.exe)
+
+running 1 test
+test bearer_auth_requires_exact_match ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests zcash_durable_outbox
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

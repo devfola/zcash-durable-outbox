@@ -1,0 +1,13 @@
+{
+  "network": "regtest",
+  "wallet": "disposable-sender",
+  "account": "00000000-0000-0000-0000-000000000001",
+  "recipient": {
+    "address": "uregtest1syntheticreceiver",
+    "amount_zat": 100000,
+    "memo_hex": "626f756e74792064656d6f"
+  },
+  "fee": {"rule": "zip317", "max_fee_zat": 10000},
+  "expiry": {"min_height": 1, "max_height": 500},
+  "privacy": "FullPrivacy"
+}

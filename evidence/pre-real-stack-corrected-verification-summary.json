@@ -1,0 +1,48 @@
+{
+  "reviewed_on": "2026-10-20",
+  "delivery_status": "corrected_MVP_with_local_regressions_and_open_operational_release_gates",
+  "corrected_build": "correction/summary.json",
+  "rust_tests": {
+    "passed": 43,
+    "failed": 0,
+    "scope": "42 library + 1 CLI; real SQLite, local fixture adapters and offline provenance checks; no real wallet/chain claims",
+    "evidence": "rust-tests.log"
+  },
+  "http_cli_smoke": {
+    "passed_checks": 10,
+    "node_calls": 0,
+    "evidence": "http-smoke.json"
+  },
+  "rust_clippy_passed": true,
+  "rust_format_passed": true,
+  "publication_enabled": "default disabled; explicit fresh disposable NU6.3 regtest config only; no restore freshness enforcement",
+  "historical_pre_correction_verification": "pre-correction-verification-summary.json",
+  "historical_actual_zallet_zebra": {
+    "processes_started": true,
+    "wallets_funded": true,
+    "pczt_pipeline_exercised": true,
+    "receiver_verified": true,
+    "required_real_stack_scenarios_completed": 9,
+    "runtime_status": "fresh pair; all nine real scenarios passed; terminal claims retained",
+    "evidence": "../integration/evidence/real-stack-final/summary.json",
+    "tested_artifacts": {
+      "core_cargo_lock_sha256": "8ed8d5c62e179400ff5f7d71c504094bce0cb95d79db620548f8d261058a59e6",
+      "orchestrator_sha256": "0c2c7979d9f589a03fa401f2a54916aa46f035c87ac267b785f2b14a04a73f5a",
+      "service_sha256": "fcc4ba5c61ee93655d6e74781cc1c2646011f43afcc937e5526c7d7fbd4636f6",
+      "verifier_cargo_lock_sha256": "22490b30ebc490f24340a8029ad454cba90dd48c0315b849c2ca8d78925d92e0",
+      "verifier_sha256": "70113de6ee5fd50ee22f8f310e5fcaacb79e5f643c11635073dbf767062efc9f"
+    },
+    "qualifies_corrected_binary": false,
+    "status": "historical pre-correction build only"
+  },
+  "supported_shape": "exactly one positive Ironwood sender input; one positive recipient; 2 through 8 actions",
+  "on_chain_loss_demonstrated": false,
+  "blockers": [
+    "externally anchored freshness and verified restore across business ledger, Outbox and wallet",
+    "enforced or reliably verified disabled broadcasting and exclusive construction authority",
+    "NU7 qualification",
+    "actual expiry and rejection experiments",
+    "broader recovery and proven-safe error classification without ownership clearing",
+    "external review"
+  ]
+}

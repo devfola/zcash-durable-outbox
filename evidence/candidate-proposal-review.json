@@ -1,0 +1,21 @@
+{
+  "path": "C:\\Users\\NewOwner\\Downloads\\Zcash-Gateway-Proposal-and-MVP.docx",
+  "sha256": "3f8278f678316586e0151c4bec2090f14caa7022956862c4101aa03223fa1754",
+  "title": "Authenticated Shielded Sync Gateway for Zcash",
+  "subtitle": "Revised proposal and MVP plan    12 October 2026",
+  "headings": [
+    "Problem and intended users",
+    "What we will build",
+    "Security scope for the first version",
+    "Evidence and delivery boundary",
+    "MVP implementation plan",
+    "1 Prove the wallet path",
+    "2 Implement the producer and verifier",
+    "3 Enforce verified sync and recovery",
+    "4 Demonstrate protection and measure cost",
+    "Deliverables and continuation decision"
+  ],
+  "contains_outbox_payout_or_durable_payment": false,
+  "embedded_attachments": [],
+  "conclusion": "Candidate is an authenticated shielded sync gateway proposal; no payment outbox proposal located in this DOCX."
+}
